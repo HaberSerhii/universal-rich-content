@@ -1,0 +1,52 @@
+body {
+  position: relative;
+  background-color: var(--white-background-color);
+  color: var(--text-color);
+  font-family: var(--main-brand-font);
+}
+
+/**
+  |============================
+  | BASE STYLE
+  |============================
+*/
+
+img {
+  display: block;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.list {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.link {
+  margin: 0;
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+
+  border: 1px solid tomato;
+  min-width: 320px;
+  max-width: 428px;
+  padding: 30px;
+}
+
+.first-div {
+  margin-bottom: 20px;
+}

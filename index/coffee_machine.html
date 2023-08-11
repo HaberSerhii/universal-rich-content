@@ -1,0 +1,481 @@
+<!-- !!!! СТИЛІ - Обов'язково вставити зверху !!!! -->
+<style>
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    .product__description.base-padding {
+        padding: 0;
+        border-radius: 0px;
+    }
+
+    .universal_rich img {
+        margin: 0;
+        border-radius: 10px;
+    }
+
+    .universal_rich p {
+        padding: 0;
+        margin: 0;
+        line-height: 130%;
+        font-weight: 400;
+        font-size: 14px;
+        font-family: "Roboto", sans-serif;
+        color: var(--color-gray-text);
+    }
+
+    .universal_rich h3 {
+        background: linear-gradient(90deg,
+                rgba(255, 134, 55, 1) 0%,
+                rgba(255, 104, 10, 1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 700;
+        margin-top: 0;
+        line-height: 130%;
+        margin-bottom: 10px;
+        font-size: 18px;
+        font-family: "Roboto", sans-serif;
+    }
+
+    .universal_rich h3:nth-child(2) {
+        margin-top: 20px;
+    }
+
+    .universal_rich h2 {
+        margin-top: 20px;
+        margin-bottom: 16px;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .universal_rich ul {
+        list-style: disc;
+        margin: 0;
+    }
+
+    .universal_rich ul li {
+        line-height: normal;
+        line-height: 130%;
+        font-weight: 400;
+        font-size: 14px;
+        font-family: "Roboto", sans-serif;
+        color: var(--color-gray-text);
+    }
+
+    .universal_rich {
+        overflow: hidden;
+    }
+
+    body {
+        padding: 0;
+    }
+
+    .universal_rich ul {
+        padding: 0;
+        padding-left: 25px;
+    }
+
+    .universal_rich ul li {
+        padding: 0;
+        padding-left: 10px;
+    }
+
+    .universal_rich div {
+        padding: 0;
+    }
+
+    div.universal_rich {
+        padding: 0;
+    }
+
+    .universal_rich br {
+        display: block;
+    }
+
+    .product__body .el-tabs__header {
+        z-index: 6;
+    }
+
+    .universal_rich {
+        max-width: 1366px;
+        margin: 0 auto;
+        text-align: center;
+        overflow-x: hidden;
+    }
+
+    .universal_rich img {
+        width: 100%;
+    }
+
+    .universal_rich .left_universal {
+        padding: 20px 16px 0;
+    }
+
+    .universal_rich .right_universal {
+        padding: 20px 16px 0;
+    }
+
+    .universal_rich .left_universal_text {
+        padding-bottom: 20px;
+    }
+
+    .universal_rich .right_universal_text {
+        padding: 0 14px 20px;
+    }
+
+    .universal_rich .indent p {
+        margin-top: 10px;
+    }
+
+    .universal_rich .footnote {
+        padding: 20px 16px;
+        text-align: left;
+    }
+
+    .universal_rich .footnote p {
+        font-size: 12px;
+        color: #959595;
+    }
+
+    .universal_rich .block_first_center {
+        text-align: center;
+        display: grid;
+        gap: 24px;
+        padding-top: 20px;
+    }
+
+    .universal_rich .block_first_center_text {
+        padding: 0 16px;
+    }
+
+    @media screen and (min-width: 666px) {
+
+        .universal_rich .left_universal,
+        .right_universal {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+            align-items: center;
+            text-align: left;
+        }
+
+        .universal_rich .right_universal_text {
+            grid-column-start: 2;
+            grid-row-start: 1;
+        }
+
+        .universal_rich .left_universal {
+            padding: 0 20px 40px;
+        }
+
+        .universal_rich .right_universal {
+            padding: 0 20px 40px;
+        }
+
+        .universal_rich .left_universal_text {
+            padding: 0;
+        }
+
+        .universal_rich .right_universal_text {
+            padding: 0;
+        }
+
+        .universal_rich .first {
+            padding-top: 40px;
+        }
+
+        .universal_rich .footnote {
+            padding: 20px 20px;
+        }
+
+        .universal_rich .block_first_center {
+            padding-top: 30px;
+        }
+
+        .universal_rich .block_first_center_text {
+            padding: 0 20px;
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+
+        .universal_rich p,
+        .universal_rich ul li {
+            line-height: 150%;
+            font-size: 18px;
+        }
+
+        .universal_rich h3 {
+            line-height: 130%;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .universal_rich h2 {
+            margin-top: 30px;
+            margin-bottom: 20px;
+            font-size: 30px;
+        }
+
+        .universal_rich .left_universal,
+        .right_universal {
+            gap: 40px;
+        }
+
+        .universal_rich .left_universal {
+            padding: 0 35px 60px;
+        }
+
+        .universal_rich .right_universal {
+            padding: 0 20px 60px;
+        }
+
+        .universal_rich .first {
+            padding-top: 40px;
+        }
+
+        .universal_rich .footnote {
+            padding: 40px 40px 20px;
+        }
+
+        .universal_rich .block_first_center {
+            padding-top: 40px;
+        }
+
+        .universal_rich .block_first_center_text {
+            padding: 0 35px;
+        }
+    }
+
+    @media screen and (min-width: 1366px) {
+
+        .universal_rich .left_universal,
+        .right_universal {
+            gap: 60px;
+        }
+
+        .universal_rich .left_universal {
+            padding: 0 80px 80px;
+        }
+
+        .universal_rich .right_universal {
+            padding: 0 80px 80px;
+        }
+
+        .universal_rich h3 {
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+
+        .universal_rich .indent p {
+            margin-top: 15px;
+        }
+
+        .universal_rich .first {
+            padding-top: 40px;
+        }
+
+        .universal_rich h2 {
+            margin-top: 40px;
+            margin-bottom: 25px;
+            font-size: 32px;
+        }
+
+        .universal_rich .footnote {
+            padding: 40px 80px 20px;
+        }
+
+
+        .universal_rich .block_first_center {
+            padding-top: 40px;
+        }
+
+        .universal_rich .block_first_center_text {
+            padding: 0 100px;
+        }
+    }
+</style>
+
+<!-- КАВОМАШИНИ ПРИКЛАД МІНІ-РІЧ -->
+<div class="universal_rich">
+    <div class="block_first_center">
+        <div class="block_first_center_text">
+            <h3 class="technical_title">Точна персоналізація у кожному заварюванні
+            </h3>
+            <p class="technical_description">Багате поєднання італійської спадщини, підключеної технології та інновацій
+                приготування кави. Завдяки поєднанню вдосконалень кавоварка працює так, як ви завжди мріяли, і готує
+                вишукану каву на ваш смак.
+            </p>
+        </div>
+        <img alt="PHILIPS HD7767/00" class="img_right "
+            src="https://i.citrus.world/uploads/content/product-photos/sinyaev/717257/kofemashiny_717257_8.webp?_t=1690977926"
+            style="width: 100%; height: auto;" />
+    </div>
+    <div class="left_universal first">
+        <div class="left_universal_text" style="display:grid; gap:20px">
+            <div>
+                <h3 class="technical_title">Задовольніть кожного завдяки 22 видам смачних кавових напоїв
+                </h3>
+                <p class="technical_description">Відкрийте для себе світ кави і догодіть кожному в будь-якому настрої
+                    завдяки 22 видам смачних кавових напоїв &ndash; від відомих напоїв, таких як еспресо й капучіно, до
+                    спеціальних напоїв на кшталт італійського еспресо макіато та флет вайт.
+                </p>
+            </div>
+            <div>
+                <h3 class="technical_title">Шість індивідуальних профілів для зберігання улюблених налаштувань кави
+                </h3>
+                <p class="technical_description">Улюблені кавові напої можна зберегти у 6 користувацьких профілях для
+                    миттєвого вибору на сенсорному дисплеї з високою роздільною здатністю. Легко персоналізуйте кожен
+                    профіль до найменших деталей.
+                </p>
+            </div>
+        </div>
+        <img alt="Saeco Xelsis Deluxe SM8780/00" class="img_right "
+            src="https://i.citrus.world/uploads/content/product-photos/sinyaev/717257/kofemashiny_717257_1.webp?_t=1690977927" />
+    </div>
+    <!--  -->
+    <div class="right_universal">
+        <div class="right_universal_text" style="display:grid; gap:20px">
+            <div>
+                <h3 class="technical_title">З AquaClean термін служби машини подовжується, а смак напою покращується
+                </h3>
+                <p class="technical_description">AquaClean &ndash; це наш запатентований фільтр для води, розроблений
+                    для покращення якості кави завдяки очищенню води. Крім того, він запобігає утворенню накипу в
+                    кавомашині. Регулярна заміна фільтра гарантує приготування до 5000 чашок кави* без видалення накипу.
+                </p>
+            </div>
+            <div>
+                <h3 class="technical_title">Отримуйте максимум смаку від зерен за допомогою BeanMaestro
+                </h3>
+                <p class="technical_description">BeanMaestro автоматично налаштовує параметри приготування кави для
+                    отримання найкращого смаку й аромату вибраних кавових зерен. Просто виберіть тип і підсмажування
+                    бобів і дозвольте BeanMaestro зробити все інше.
+                </p>
+            </div>
+        </div>
+        <img alt="Saeco Xelsis Deluxe SM8780/00" class="img_left"
+            src="https://i.citrus.world/uploads/content/product-photos/sinyaev/717257/kofemashiny_717257_2.webp?_t=1690977927" />
+    </div>
+    <!--  -->
+    <div class="left_universal">
+        <div class="left_universal_text" style="display:grid; gap:20px">
+            <div>
+                <h3 class="technical_title">Регулюйте до 7 налаштувань кавових напоїв за допомогою CoffeeEqualizer
+                    Touch+
+                </h3>
+                <p class="technical_description">Створіть свій улюблений рецепт за допомогою CoffeeEqualizer Touch+.
+                    Приготуйте каву за власним рецептом, налаштувавши її міцність, об&rsquo;єм кави та молока,
+                    температуру, смак, кількість молочної піни і навіть порядок доливання кави і молока. За потреби
+                    можна скористатися функцією ExtraShot для підвищення насиченості кави.
+                </p>
+            </div>
+            <div>
+                <h3 class="technical_title">Вдосконалений 5-дюймовий кольоровий сенсорний дисплей
+                </h3>
+                <p class="technical_description">Вдосконалений 5-дюймовий кольоровий дисплей із високою роздільною
+                    здатністю має інтуїтивний інтерфейс користувача на сенсорному екрані для точного створення кавових
+                    напоїв.
+                </p>
+            </div>
+        </div>
+        <img alt="Saeco Xelsis Deluxe SM8780/00" class="img_right "
+            src="https://i.citrus.world/uploads/content/product-photos/sinyaev/717257/kofemashiny_717257_4.webp?_t=1690977926" />
+    </div>
+    <!--  -->
+    <div class="right_universal">
+        <div class="right_universal_text" style="display:grid; gap:20px">
+            <div>
+                <h3 class="technical_title">Для повноцінного використання підключіть машину до Wi-Fi через вбудований
+                    модуль
+                </h3>
+                <p class="technical_description">Кавомашина має вбудовану функцію підключення модуля Wi-Fi для
+                    запобігання упущенню частин процесу, а також вдосконалені функції, якими легко керувати з дисплея і
+                    дізнаватися про доступність витратних матеріалів у магазинах. Регулярні оновлення базуються на
+                    вдосконаленнях програмного забезпечення і навчанні пристрою, що завжди сприяє покращенню та
+                    збагаченню використання і дозволяє користуватися усіма перевагами кавомашини.
+                </p>
+            </div>
+            <div>
+                <h3 class="technical_title">Відкрийте для себе нові рецепти з персоналізованими рекомендаціями
+                </h3>
+                <p class="technical_description">Пристрій вивчить ваші уподобання і надаватиме вам ексклюзивні,
+                    персоналізовані рекомендації, які допоможуть вам відкрити нові рецепти кави, а також різні функції.
+                </p>
+            </div>
+        </div>
+        <img alt="Saeco Xelsis Deluxe SM8780/00" class="img_left"
+            src="https://i.citrus.world/uploads/content/product-photos/sinyaev/717257/kofemashiny_717257_6.webp?_t=1690977926" />
+    </div>
+    <div class="left_universal">
+        <div class="left_universal_text" style="display:grid; gap:20px">
+            <div>
+                <h3 class="technical_title">Без зусиль установлюйте налаштування для приготування ідеальної кави з
+                    CoffeeMaestro
+                </h3>
+                <p class="technical_description">Легко персоналізуйте свою чашку кави за допомогою CoffeeMaestro. Просто
+                    виберіть потрібний смак з-поміж 3 попередньо встановлених налаштувань &ndash; Delicato, Intenso,
+                    Forte. Пристрій автоматично скоригує інші налаштування (як-от міцність, об&rsquo;єм кави і час
+                    попереднього намочування), щоб догодити вашому смаку.
+                </p>
+            </div>
+            <div>
+                <h3 class="technical_title">Latte Perfetto &ndash; для густої молочної пінки однорідної текстури
+                </h3>
+                <p class="technical_description">Зовнішній молочник із нашою технологією LattePerfetto створює густу
+                    молочну пінку з однорідною, шовковистою текстурою.
+                </p>
+            </div>
+        </div>
+        <img alt="Saeco Xelsis Deluxe SM8780/00" class="img_right "
+            src="https://i.citrus.world/uploads/content/product-photos/sinyaev/717257/kofemashiny_717257_3.webp?_t=1690977926" />
+    </div>
+    <!--  -->
+    <div class="right_universal">
+        <div class="right_universal_text" style="display:grid; gap:20px">
+            <div>
+                <h3 class="technical_title">Готуйте два улюблені кавові напої лише одним натисненням
+                </h3>
+                <p class="technical_description">Готуйте і насолоджуйтеся одинарною чи подвійною порцією улюбленого
+                    кавового напою (зокрема капучіно або лате макіато) одним натисненням кнопки.
+                </p>
+            </div>
+            <div>
+                <h3 class="technical_title">Інтуїтивне обслуговування для завжди якісної кави
+                </h3>
+                <p class="technical_description">Легко перевіряйте стан машини та чищення на інтуїтивній панелі з
+                    кольоровими позначками на дисплеї. Панель надасть вам корисний огляд і повідомить про стан речей на
+                    кшталт рівня води або закінчення терміну експлуатації AquaClean.
+                </p>
+            </div>
+        </div>
+        <img alt="Saeco Xelsis Deluxe SM8780/00" class="img_left"
+            src="https://i.citrus.world/uploads/content/product-photos/sinyaev/717257/kofemashiny_717257_5.webp?_t=1690977926" />
+    </div>
+    <!--  -->
+    <div class="left_universal">
+        <div class="left_universal_text" style="display:grid; gap:20px">
+            <div>
+                <h3 class="technical_title">Приготування щонайменше 20 000 чашок завдяки нашим найміцнішим керамічним
+                    жорнам
+                </h3>
+                <p class="technical_description">Наші найміцніші жорна вичавлюють найкращі смаки та аромати з кавових
+                    зерен. Повністю керамічні жорна неймовірно тверді та точні і дозволяють приготувати щонайменше 20
+                    000 чашок смачної кави зі свіжомелених зерен. Легко налаштовуйте жорна відповідно до свого смаку,
+                    вибираючи з-поміж 12 налаштувань.
+                </p>
+            </div>
+            <div>
+                <h3 class="technical_title">Насолоджуйтеся вишуканим смаком з Aroma Extract
+                </h3>
+                <p class="technical_description">Aroma Extract забезпечує оптимальний баланс між температурою
+                    заварювання та екстракцією аромату для приготування кави з вишуканим смаком.
+                </p>
+            </div>
+        </div>
+        <img alt="Saeco Xelsis Deluxe SM8780/00" class="img_right "
+            src="https://i.citrus.world/uploads/content/product-photos/sinyaev/717257/kofemashiny_717257_7.webp?_t=1690977926" />
+    </div>
+    <!-- -->
+</div>
