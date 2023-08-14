@@ -1,52 +1,126 @@
+:root {
+  --page-bg-color: #f9f9fd;
+  --primary-text-color: black;
+  --card-set-gap: 20px;
+  --card-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
 body {
-  position: relative;
-  background-color: var(--white-background-color);
-  color: var(--text-color);
-  font-family: var(--main-brand-font);
+  background-image: linear-gradient(-45deg, #4571d8, #21586f, #666b7a, #2b5ea5);
+  color: var(--primary-text-color);
+  height: 100vw;
+  line-height: 1.5;
 }
 
-/**
-  |============================
-  | BASE STYLE
-  |============================
-*/
-
-img {
-  display: block;
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
-p,
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
   margin: 0;
 }
 
-.list {
-  list-style-type: none;
-  margin: 0px;
-  padding: 0px;
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
-.link {
-  margin: 0;
-  text-decoration: none;
+/* PAGE */
+.page-title {
+  font-size: 32px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #ff8637;
 }
 
+/* CONTAINER */
 .container {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: row;
+  width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
 
-  border: 1px solid tomato;
-  min-width: 320px;
-  max-width: 428px;
-  padding: 30px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.first-div {
-  margin-bottom: 20px;
+/* CARD SET */
+.card-set {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--card-set-gap));
+  margin-top: calc(-1 * var(--card-set-gap));
+}
+
+.card-set > .item {
+  flex-basis: calc(100% / 3 - var(--card-set-gap));
+  margin-left: var(--card-set-gap);
+  margin-top: var(--card-set-gap);
+}
+
+/* CARD */
+.card {
+  box-shadow: var(--card-shadow);
+  border: 2px solid black;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card-content {
+  padding: 15px;
+  background-color: white;
+}
+.card-content:hover {
+  background-image: linear-gradient(-45deg, #4571d8, #21586f, #666b7a, #2b5ea5);
+  color: aliceblue;
+}
+
+.card-text {
+  margin-top: 10px;
+}
+
+.card-heading {
+  color: #ff8637;
+  text-align: center;
+}
+.card-thumb {
+  width: 100%;
+  height: 165px;
+}
+
+.span {
+  color: #ff8637;
+  font-weight: bold;
+}
+.text-link {
+  text-align: center;
+}
+.text-link:hover {
+  background-image: linear-gradient(-45deg, #4571d8, #21586f, #666b7a, #2b5ea5);
+  color: aliceblue;
+}
+
+.universal {
+  background-image: url(https://i.citrus.world/uploads/content/product-photos/kirsh/718254/smartphone_718254_01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.smartphone {
+  background-image: url(https://i.citrus.world/uploads/content/product-photos/topchiy/August-2022/August-2-2022/August-3-2022/smartphone_708988_11.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }

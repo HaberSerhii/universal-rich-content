@@ -1,0 +1,567 @@
+<style>
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    .product__description.base-padding {
+        padding: 0;
+        border-radius: 0px;
+    }
+
+    .universal_rich img {
+        margin: 0;
+        border-radius: 10px;
+    }
+
+    .universal_rich p {
+        padding: 0;
+        margin: 0;
+        line-height: 130%;
+        font-weight: 400;
+        font-size: 14px;
+        font-family: "Roboto", sans-serif;
+        color: var(--color-gray-text);
+    }
+
+    .universal_rich h3 {
+        background: linear-gradient(90deg,
+                rgba(255, 134, 55, 1) 0%,
+                rgba(255, 104, 10, 1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 700;
+        margin-top: 0;
+        line-height: 130%;
+        margin-bottom: 10px;
+        font-size: 18px;
+        font-family: "Roboto", sans-serif;
+    }
+
+    .universal_rich h3:nth-child(2) {
+        margin-top: 20px;
+    }
+
+    .universal_rich h2 {
+        margin-top: 20px;
+        margin-bottom: 16px;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .universal_rich ul {
+        list-style: disc;
+        margin: 0;
+    }
+
+    .universal_rich ul li {
+        line-height: normal;
+        line-height: 130%;
+        font-weight: 400;
+        font-size: 14px;
+        font-family: "Roboto", sans-serif;
+        color: var(--color-gray-text);
+    }
+
+    .universal_rich {
+        overflow: hidden;
+        padding-bottom: 40px;
+        max-width: 1366px;
+        margin: 0 auto;
+    }
+
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    .universal_rich ul {
+        padding: 0;
+        padding-left: 25px;
+    }
+
+    .universal_rich ul li {
+        padding: 0;
+        padding-left: 10px;
+    }
+
+    .universal_rich div {
+        padding: 0;
+    }
+
+    div.universal_rich {
+        padding: 0;
+    }
+
+    .universal_rich br {
+        display: block;
+    }
+
+    .product__body .el-tabs__header {
+        z-index: 6;
+    }
+
+    .universal_rich {
+        max-width: 1366px;
+        margin: 0 auto;
+        text-align: center;
+        overflow-x: hidden;
+    }
+
+    .universal_rich img {
+        width: 100%;
+    }
+
+    .universal_rich .left_universal {
+        padding: 20px 16px 0;
+    }
+
+    .universal_rich .right_universal {
+        padding: 20px 16px 0;
+    }
+
+    .universal_rich .left_universal_text {
+        padding-bottom: 20px;
+    }
+
+    .universal_rich .right_universal_text {
+        padding: 0 14px 20px;
+    }
+
+    .universal_rich .indent p {
+        margin-top: 10px;
+    }
+
+    .universal_rich .footnote {
+        padding: 20px 16px;
+        text-align: left;
+    }
+
+    .universal_rich .footnote p {
+        font-size: 12px;
+        color: #959595;
+    }
+
+    .universal_rich .block_first_center {
+        text-align: center;
+        display: grid;
+        gap: 24px;
+        padding-top: 20px;
+    }
+
+    .universal_rich .block_first_center_text {
+        padding: 0 16px;
+    }
+
+
+    .universal_rich .universal_hp_block_left {
+        display: grid;
+        text-align: left;
+        padding: 40px 16px 0;
+        grid-template-areas:
+            "b"
+            "a"
+            "d";
+        gap: 16px;
+    }
+
+    .universal_rich .universal_hp_block_left .right_universal_text {
+        grid-area: b;
+        padding: 0;
+    }
+
+    .universal_rich .universal_hp_block_left .block_first_center_text {
+        grid-area: d;
+        padding: 0;
+    }
+
+    .universal_rich .universal_hp_block_left .img_left {
+        grid-area: a;
+    }
+
+    .universal_rich .universal_hp_block_right .right_universal_text {
+        grid-area: b;
+        padding: 0;
+    }
+
+    .universal_rich .universal_hp_block_right .block_first_center_text {
+        grid-area: d;
+        padding: 0;
+    }
+
+    .universal_rich .universal_hp_block_right .img_left {
+        grid-area: a;
+    }
+
+    .universal_rich .universal_hp_block_right {
+        display: grid;
+        text-align: left;
+        padding: 40px 16px 0;
+        grid-template-areas:
+            "b"
+            "a"
+            "d";
+        gap: 16px;
+    }
+
+    .universal_rich .universal_hp_block_left .right_universal_text {
+        grid-area: b;
+        padding: 0;
+    }
+
+    .universal_rich .universal_hp_block_left .block_first_center_text {
+        grid-area: d;
+        padding: 0;
+    }
+
+    .universal_rich .universal_hp_block_left .img_left {
+        grid-area: a;
+    }
+
+
+
+
+
+
+
+    @media screen and (min-width: 666px) {
+
+        .universal_rich .left_universal,
+        .right_universal {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+            align-items: center;
+            text-align: left;
+        }
+
+        .universal_rich .right_universal_text {
+            grid-column-start: 2;
+            grid-row-start: 1;
+        }
+
+        .universal_rich .left_universal {
+            padding: 0 20px 40px;
+        }
+
+        .universal_rich .right_universal {
+            padding: 0 20px 40px;
+        }
+
+        .universal_rich .left_universal_text {
+            padding: 0;
+        }
+
+        .universal_rich .right_universal_text {
+            padding: 0;
+        }
+
+        .universal_rich .first {
+            padding-top: 40px;
+        }
+
+        .universal_rich .footnote {
+            padding: 20px 20px;
+        }
+
+        .universal_rich .block_first_center {
+            padding-top: 30px;
+        }
+
+        .universal_rich .block_first_center_text {
+            padding: 0 20px;
+        }
+
+        .universal_rich .universal_hp_block_left {
+            display: grid;
+            text-align: left;
+            padding: 40px 20px 0;
+            align-items: center;
+            grid-template-areas:
+                "a b"
+                "d d";
+            gap: 20px;
+        }
+
+        .universal_rich .universal_hp_block_right {
+            display: grid;
+            text-align: left;
+            padding: 40px 20px 0;
+            align-items: center;
+            grid-template-areas:
+                "b a"
+                "d d";
+            gap: 16px;
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+
+        .universal_rich p,
+        .universal_rich ul li {
+            line-height: 150%;
+            font-size: 18px;
+        }
+
+        .universal_rich h3 {
+            line-height: 130%;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .universal_rich h2 {
+            margin-top: 30px;
+            margin-bottom: 20px;
+            font-size: 30px;
+        }
+
+        .universal_rich .left_universal,
+        .right_universal {
+            gap: 40px;
+        }
+
+        .universal_rich .left_universal {
+            padding: 0 35px 60px;
+        }
+
+        .universal_rich .right_universal {
+            padding: 0 20px 60px;
+        }
+
+        .universal_rich .first {
+            padding-top: 40px;
+        }
+
+        .universal_rich .footnote {
+            padding: 40px 40px 20px;
+        }
+
+        .universal_rich .block_first_center {
+            padding-top: 40px;
+        }
+
+        .universal_rich .block_first_center_text {
+            padding: 0 35px;
+        }
+
+        .universal_rich .universal_hp_block_left {
+            padding: 40px 40px 0;
+            gap: 25px;
+        }
+
+        .universal_rich .universal_hp_block_right {
+            padding: 40px 40px 0;
+            gap: 25px;
+        }
+    }
+
+    @media screen and (min-width: 1366px) {
+
+        .universal_rich .left_universal,
+        .right_universal {
+            gap: 60px;
+        }
+
+        .universal_rich .left_universal {
+            padding: 0 80px 80px;
+        }
+
+        .universal_rich .right_universal {
+            padding: 0 80px 80px;
+        }
+
+        .universal_rich h3 {
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+
+        .universal_rich .indent p {
+            margin-top: 15px;
+        }
+
+        .universal_rich .first {
+            padding-top: 40px;
+        }
+
+        .universal_rich h2 {
+            margin-top: 40px;
+            margin-bottom: 25px;
+            font-size: 32px;
+        }
+
+        .universal_rich .footnote {
+            padding: 40px 80px 20px;
+        }
+
+
+        .universal_rich .block_first_center {
+            padding-top: 40px;
+        }
+
+        .universal_rich .block_first_center_text {
+            padding: 0 100px;
+        }
+
+        .universal_rich .universal_hp_block_left {
+            padding: 60px 80px 0;
+            gap: 25px;
+        }
+
+        .universal_rich .universal_hp_block_right {
+            padding: 60px 80px 0;
+            gap: 25px;
+        }
+    }
+</style>
+<div class="universal_rich">
+    <div class="left_universal first">
+        <div class="left_universal_text   ">
+            <h3 class="technical_title">Чудова чіткість, виняткова плавність
+            </h3>
+            <p class="technical_description">Ультраширокий екран з діагоналлю 6,5 дюйма забезпечує відмінні візуальні
+                ефекти від краю до краю. Роздільна здатність FullHD+ (2400х1080) дозволяє переглядати фотографії та
+                відео з високою деталізацією, а частота оновлення 90 Гц забезпечує плавність відтворення та комфорт під
+                час гри. Дивіться відео на YouTube, грайте в ігри або перегортайте свої стрічки в соцмережах, отримуючи
+                при цьому справжнє задоволення від картинки на екрані.
+            </p>
+        </div>
+        <img alt=""
+            src="https://i.citrus.world/uploads/content/product-photos/topchiy/August-2022/August-2-2022/August-3-2022/smartphone_708988_7.jpg" />
+    </div>
+    <div class="right_universal">
+        <div class="right_universal_text   ">
+            <h3 class="technical_title">Новий вимір звуку
+            </h3>
+            <p class="technical_description">Слухайте свої улюблені треки через два великі стереодинаміки, щоб почути
+                покращені баси, чистіший вокал і більшу чіткість при вищій гучності. Або пориньте у багатовимірний звук
+                Dolby Atmos&reg;, який оточує вас з усіх боків, як тільки ви надягаєте навушники.
+            </p>
+        </div>
+        <img alt=""
+            src="https://i.citrus.world/uploads/content/product-photos/topchiy/August-2022/August-2-2022/August-3-2022/smartphone_708988_8.jpg" />
+    </div>
+    <div class="left_universal ">
+        <div class="left_universal_text   ">
+            <h3 class="technical_title">Більше часу на все, що вам потрібно
+            </h3>
+            <p class="technical_description">Залишайтеся у грі або на зв&#39;язку з колегами довше завдяки акумулятору
+                ємністю 5000 мАг. А якщо енергія у вашому телефоні добігає кінця, ви можете швидко зарядити свій
+                Motorola G32 за допомогою прискореної зарядки TurboPower&trade; потужністю 30 Вт. <sup>1</sup>
+            </p>
+        </div>
+        <img alt=""
+            src="https://i.citrus.world/uploads/content/product-photos/topchiy/August-2022/August-2-2022/August-3-2022/smartphone_708988_9.jpg" />
+    </div>
+    <div class="right_universal">
+        <div class="right_universal_text   ">
+            <h3 class="technical_title">Швидка робота всіх застосунків
+            </h3>
+            <p class="technical_description">Граєте ви, транслюєте відео або фотографуєте, Motorola G32 у будь-якому
+                випадку працюватиме ефективно та швидко. Все завдяки енергоефективному 8-ядерному процесору
+                Snapdragon&reg; 680 та оперативній пам&#39;яті об&#39;ємом 6/8 ГБ. <sup>2</sup>
+            </p>
+        </div>
+        <img alt=""
+            src="https://i.citrus.world/uploads/content/product-photos/topchiy/August-2022/August-2-2022/August-3-2022/smartphone_708988_10.jpg" />
+    </div>
+    <div class="left_universal ">
+        <div class="left_universal_text   ">
+            <h3 class="technical_title">Камера для вашої творчості
+            </h3>
+            <p class="technical_description">Будьте готові зробити чудовий знімок у будь-який момент, вдень чи вночі, із
+                системою з трьох камер та 50-мегапіксельним об&#39;єктивом з автофокусом. Технологія Quad Pixel поєднує
+                чотири пікселі в один для кращої чутливості при слабкому освітленні, а фотографії на відкритому повітрі
+                покращуються за допомогою режиму Ultra-res, що забезпечує неймовірну чіткість. Вам залишається просто
+                натиснути кнопку.
+            </p>
+        </div>
+        <img alt=""
+            src="https://i.citrus.world/uploads/content/product-photos/topchiy/August-2022/August-2-2022/August-3-2022/smartphone_708988_11.jpg" />
+    </div>
+    <div class="right_universal ">
+        <div class="right_universal_text   ">
+            <h3 class="technical_title">Ширший обрій
+            </h3>
+            <p class="technical_description">Надширококутний об&#39;єктив з кутом огляду 118&deg;, який вміщає у кадр у
+                4 рази більше,<sup>3</sup> ніж стандартний об&#39;єктив, дозволяє зафіксувати більше з того, що бачать
+                ваші очі.
+            </p>
+        </div>
+        <img alt=""
+            src="https://i.citrus.world/uploads/content/product-photos/topchiy/August-2022/August-2-2022/August-3-2022/smartphone_708988_12.jpg" />
+    </div>
+    <div class="left_universal ">
+        <div class="left_universal_text   ">
+            <h3 class="technical_title">Наблизьтеся максимально
+            </h3>
+            <p class="technical_description">Знімайте об&#39;єкти зблизька за допомогою об&#39;єктива Macro Vision
+                &mdash; і ви помітите деталі, які не побачить стандартний об&#39;єктив.
+            </p>
+        </div>
+        <img alt=""
+            src="https://i.citrus.world/uploads/content/product-photos/topchiy/August-2022/August-2-2022/August-3-2022/smartphone_708988_13.jpg" />
+    </div>
+    <div class="right_universal ">
+        <div class="right_universal_text   ">
+            <h3 class="technical_title">З кращого боку
+            </h3>
+            <p class="technical_description">Покажіть себе у всій красі з 16-мегапіксельною передньою камерою. Вона може
+                автоматично згладжувати нерівності тону шкіри під час зйомки селфі (або під час запису відео), щоб ви
+                завжди виглядали в кадрі просто чудово.
+            </p>
+        </div>
+        <img alt=""
+            src="https://i.citrus.world/uploads/content/product-photos/topchiy/August-2022/August-2-2022/August-3-2022/smartphone_708988_14.jpg" />
+    </div>
+    <div class="left_universal ">
+        <div class="left_universal_text   ">
+            <h3 class="technical_title">Місце для всього
+            </h3>
+            <p class="technical_description">Завдяки вбудованій пам&#39;яті об&#39;ємом 128/256 ГБ, у цьому телефоні
+                достатньо місця для безлічі ваших фотографій, фільмів, музики, програм та ігор.<sup>4</sup>
+            </p>
+        </div>
+        <img alt=""
+            src="https://i.citrus.world/uploads/content/product-photos/topchiy/August-2022/August-2-2022/August-3-2022/smartphone_708988_15.jpg" />
+    </div>
+    <div class="right_universal ">
+        <div class="right_universal_text   ">
+            <h3 class="technical_title">Ваш телефон. Ваші правила
+            </h3>
+            <p class="technical_description">З операційною системою My UX ви зможете легко керувати своїм телефоном за
+                допомогою простих жестів, налаштовувати параметри розваг і створювати зовнішній вигляд, який вам до
+                душі.
+            </p>
+        </div>
+        <img alt=""
+            src="https://i.citrus.world/uploads/content/product-photos/topchiy/August-2022/August-2-2022/August-3-2022/smartphone_708988_16.jpg" />
+    </div>
+    <div class="left_universal ">
+        <div class="left_universal_text   ">
+            <h3 class="technical_title">Легкий доступ простим торканням
+            </h3>
+            <p class="technical_description">З Motorola G32 вам не потрібно запам&#39;ятовувати паролі. Ви завжди можете
+                розблокувати телефон за допомогою відбитка пальця. А також швидко відкрити контекстне меню подвійним
+                торканням.
+            </p>
+        </div>
+        <img alt=""
+            src="https://i.citrus.world/uploads/content/product-photos/topchiy/August-2022/August-2-2022/August-3-2022/smartphone_708988_18.jpg" />
+    </div>
+    <div class="footnote">
+        <p><sup><span>1</span></sup><span>Батарея має бути сильно розряджена; швидкість заряджання сповільнюється по
+                мірі заряджання. Фактична продуктивність батареї може змінюватись і залежить від багатьох факторів,
+                включаючи рівень сигналу, налаштування мережі та пристрою, температуру, стан батареї та особливості
+                використання.</span>
+        </p>
+        <p><sup><span>2</span></sup><span>Об&#39;єм пам&#39;яті становить 6/8 ГБ для різних моделей.</span>
+        </p>
+        <p><sup><span>3</span></sup><span>У порівнянні з виміряною площею стандартної камери з кутом огляду 78&deg;
+                (FOV) при тому ж співвідношенні сторін.</span>
+        </p>
+        <p><sup><span>4</span></sup><span>Доступний обсяг пам&rsquo;яті дещо менший через багато факторів, включаючи
+                операційну систему, програмне забезпечення та функції, що використовують частину цієї ємності. Вона
+                також може змінитися після оновлення програмного забезпечення.</span>
+        </p>
+    </div>
+</div>
