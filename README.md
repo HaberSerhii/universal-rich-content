@@ -5,7 +5,7 @@
   <h3 align="left" style="padding: 20px 0; font-size: 20px; font-weight: 700; letter-spacing: 0.1em; color: #ff8637;">update 15.08.23</h3>
   <ul>
     <li>
-      додано поіск категорії
+      додано пошук категорії
     </li>
     <li>
       додана категорія "Ланцюгові пили"
