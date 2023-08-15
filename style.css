@@ -53,6 +53,22 @@ img {
   margin-right: auto;
 }
 
+/* Styles for input */
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.search-container > input {
+  padding: 16px 0 16px 24px;
+  width: 40%;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  outline: none;
+}
+
 /* CARD SET */
 .card-set {
   padding: 0;
