@@ -219,9 +219,35 @@
     grid-area: a;
   }
 
+  /* universal_side_by_side_block */
+
+  .universal_rich .universal_side_by_side_block{
+    padding: 30px 16px 0;
+    display: grid;
+    gap: 16px;
+  }
+  .universal_rich .universal_side_by_side_block .side_by_side{
+    display: grid;
+    gap: 16px;
+  }
 
 
 
+  .universal_rich .universal_side_by_side_block .side_by_side_text{
+    display: grid;
+    gap: 10px;
+  }
+  .universal_rich .universal_side_by_side_block .side_by_side_text .tehnic_text{
+    color: #959595;
+  }
+  .universal_rich .universal_side_by_side_block .side_by_side_text .footnote_text_side{
+    color: #959595;
+    font-size: 12px;
+  }
+
+.universal_rich .universal_side_by_side_block h3{
+  margin-bottom: 0;
+}
 
 
 
@@ -294,6 +320,16 @@
         "d d";
       gap: 16px;
     }
+    /* universal_side_by_side_block */
+
+    .universal_rich .universal_side_by_side_block{
+    padding: 40px 32px 0;
+    grid-template-columns: repeat(3,1fr);
+    gap: 16px;
+    text-align: left;
+    align-items: flex-start;
+  }
+    
   }
 
   @media screen and (min-width: 1024px) {
@@ -354,6 +390,19 @@
       padding: 40px 40px 0;
       gap: 25px;
     }
+    .universal_rich .universal_side_by_side_block{
+    padding: 40px 40px 0;
+    gap: 20px;
+  }
+  .universal_rich .universal_side_by_side_block .side_by_side_text .tehnic_text{
+    font-size: 16px;
+  }
+  .universal_rich .universal_side_by_side_block .side_by_side_text .footnote_text_side{
+    font-size: 14px;
+  }
+  .universal_rich .universal_side_by_side_block .side_by_side{
+    gap: 20px;
+  }
   }
 
   @media screen and (min-width: 1366px) {
@@ -412,6 +461,13 @@
       padding: 60px 80px 0;
       gap: 25px;
     }
+    .universal_rich .universal_side_by_side_block{
+    padding: 40px 80px 0;
+    gap: 24px;
+  }
+  .universal_rich .universal_side_by_side_block .side_by_side_text{
+    gap: 14px;
+  }
   }
 </style>
 
@@ -718,6 +774,7 @@
         програмах окремо.
       </p>
     </div>
+
     <img alt="" class="img_left"
       src="https://i.citrus.world/uploads/content/product-photos/topchiy/August-2023/726737_07.jpg" />
     <div class="block_first_center_text">
@@ -732,6 +789,41 @@
     </div>
   </div>
 
+  <!-- ---------------------------------------------------------------------------------------------------------------------->
+
+<!-- Блок три рядом -->
+
+<div class="universal_side_by_side_block">
+  <div class="side_by_side">
+    <img src="https://i.citrus.world/uploads/content/product-photos/kirsh/724053/Property%201%3D1.png?_t=1692026898" alt="">
+    <div class="side_by_side_text">
+      <h3 class="technical_title">Зоголовок</h3>
+      <p class="tehnic_text">технический текст</p>
+      <p class="technical_description">sed porro consectetur, excepturi doloremque repellat quidem ea quae eum nostrum non explicabo dicta magni?</p>
+      <p class="footnote_text_side">*Изображения и видео на этой странице предназначены только для
+        иллюстрации и могут не соответствовать продукту.</p>
+    </div>
+  </div>
+  <div class="side_by_side">
+    <img src="https://i.citrus.world/uploads/content/product-photos/kirsh/724053/Property%201%3D2.png?_t=1692026899" alt="">
+    <div class="side_by_side_text">
+      <h3 class="technical_title">Зоголовок</h3>
+      <p class="tehnic_text">технический текст</p>
+      <p class="technical_description">sed porro consectetur, excepturi doloremque repellat quidem ea quae eum nostrum non explicabo dicta magni?</p>
+      <p class="footnote_text_side">*Изображения и видео на этой странице предназначены только для
+        иллюстрации и могут не соответствовать продукту.</p>
+    </div>
+  </div>
+  <div class="side_by_side">
+    <img src="https://i.citrus.world/uploads/content/product-photos/kirsh/724053/Property%201%3D3.png?_t=1692026899" alt="">
+    <div class="side_by_side_text">
+      <h3 class="technical_title">Зоголовок</h3>
+      <p class="tehnic_text">технический текст</p>
+      <p class="technical_description">sed porro consectetur, excepturi doloremque repellat quidem ea quae eum nostrum non explicabo dicta magni?</p>
+      <p class="footnote_text_side">*Изображения и видео на этой странице предназначены только для
+        иллюстрации и могут не соответствовать продукту.</p>
+    </div></div>
+</div>
 
 
 
