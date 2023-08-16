@@ -9,7 +9,7 @@
 body {
   background-image: linear-gradient(-45deg, #4571d8, #21586f, #666b7a, #2b5ea5);
   color: var(--primary-text-color);
-  height: 100vw;
+  height: 100%;
   line-height: 1.5;
 }
 
