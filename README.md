@@ -2,6 +2,31 @@
 <img src="https://www.ctrs.com.ua/images/logo.svg" alt='logo' />
 <h3 align="center" style="padding: 20px 0; font-size: 30px; font-weight: 700; letter-spacing: 0.1em; color: #ff8637;">Описи для карток товарів. Updates.</h3>
   <p></p>
+   <h3 align="left" style="padding: 20px 0; font-size: 20px; font-weight: 700; letter-spacing: 0.1em; color: #ff8637;">update 16.08.23</h3>
+  <ul>
+    <li>
+      оновлено головний блок з картками товару v1.2 (додано нові блоки)
+    </li>
+    <li>
+      додана категорія "Ноутбуки HP"
+    </li>
+    <li>
+      додана категорія "Ноутбуки ASUS"
+    </li>
+    <li>
+      додана категорія "Водонагрівачі"
+    </li>
+    <li>
+      додана категорія "Ігрові диски"
+    </li>
+    <li>
+      додана категорія "Пральні машини"
+    </li>
+    <li>
+      додана категорія "Надувні матраци та мішки"
+    </li>
+  </ul>
+  <p></p>
   <h3 align="left" style="padding: 20px 0; font-size: 20px; font-weight: 700; letter-spacing: 0.1em; color: #ff8637;">update 15.08.23</h3>
   <ul>
     <li>
