@@ -1,0 +1,512 @@
+<style type="text/css">
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    .product__description.base-padding {
+        padding: 0;
+        border-radius: 0px;
+    }
+
+    .universal_rich img {
+        margin: 0;
+        border-radius: 10px;
+    }
+
+    .universal_rich p {
+        padding: 0;
+        margin: 0;
+        line-height: 130%;
+        font-weight: 400;
+        font-size: 14px;
+        font-family: "Roboto", sans-serif;
+        color: var(--color-gray-text);
+    }
+
+    .universal_rich h3 {
+        background: linear-gradient(90deg,
+                rgba(255, 134, 55, 1) 0%,
+                rgba(255, 104, 10, 1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 700;
+        margin-top: 0;
+        line-height: 130%;
+        margin-bottom: 10px;
+        font-size: 18px;
+        font-family: "Roboto", sans-serif;
+    }
+
+    .universal_rich h3:nth-child(2) {
+        margin-top: 20px;
+    }
+
+    .universal_rich h2 {
+        margin-top: 20px;
+        margin-bottom: 16px;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .universal_rich ul {
+        list-style: disc;
+        margin: 0;
+    }
+
+    .universal_rich ul li {
+        line-height: normal;
+        line-height: 130%;
+        font-weight: 400;
+        font-size: 14px;
+        font-family: "Roboto", sans-serif;
+        color: var(--color-gray-text);
+    }
+
+    .universal_rich {
+        overflow: hidden;
+        padding-bottom: 40px;
+        max-width: 1366px;
+        margin: 0 auto;
+    }
+
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    .universal_rich ul {
+        padding: 0;
+        padding-left: 25px;
+    }
+
+    .universal_rich ul li {
+        padding: 0;
+        padding-left: 10px;
+    }
+
+    .universal_rich div {
+        padding: 0;
+    }
+
+    div.universal_rich {
+        padding: 0;
+    }
+
+    .universal_rich br {
+        display: block;
+    }
+
+    .product__body .el-tabs__header {
+        z-index: 6;
+    }
+
+    .universal_rich {
+        max-width: 1366px;
+        margin: 0 auto;
+        text-align: center;
+        overflow-x: hidden;
+    }
+
+    .universal_rich img {
+        width: 100%;
+    }
+
+    .universal_rich .left_universal {
+        padding: 20px 16px 0;
+    }
+
+    .universal_rich .right_universal {
+        padding: 20px 16px 0;
+    }
+
+    .universal_rich .left_universal_text {
+        padding-bottom: 20px;
+    }
+
+    .universal_rich .right_universal_text {
+        padding: 0 14px 20px;
+    }
+
+    .universal_rich .indent p {
+        margin-top: 10px;
+    }
+
+    .universal_rich .footnote {
+        padding: 20px 16px;
+        text-align: left;
+    }
+
+    .universal_rich .footnote p {
+        font-size: 12px;
+        color: #959595;
+    }
+
+    .universal_rich .block_first_center {
+        text-align: center;
+        display: grid;
+        gap: 24px;
+        padding-top: 20px;
+    }
+
+    .universal_rich .block_first_center_text {
+        padding: 0 16px;
+    }
+
+    .universal_rich .universal_hp_block_left {
+        display: grid;
+        text-align: left;
+        padding: 40px 16px 0;
+        grid-template-areas:
+            "b"
+            "a"
+            "d";
+        gap: 16px;
+    }
+
+    .universal_rich .universal_hp_block_left .right_universal_text {
+        grid-area: b;
+        padding: 0;
+    }
+
+    .universal_rich .universal_hp_block_left .block_first_center_text {
+        grid-area: d;
+        padding: 0;
+    }
+
+    .universal_rich .universal_hp_block_left .img_left {
+        grid-area: a;
+    }
+
+    .universal_rich .universal_hp_block_right .right_universal_text {
+        grid-area: b;
+        padding: 0;
+    }
+
+    .universal_rich .universal_hp_block_right .block_first_center_text {
+        grid-area: d;
+        padding: 0;
+    }
+
+    .universal_rich .universal_hp_block_right .img_left {
+        grid-area: a;
+    }
+
+    .universal_rich .universal_hp_block_right {
+        display: grid;
+        text-align: left;
+        padding: 40px 16px 0;
+        grid-template-areas:
+            "b"
+            "a"
+            "d";
+        gap: 16px;
+    }
+
+    .universal_rich .universal_hp_block_left .right_universal_text {
+        grid-area: b;
+        padding: 0;
+    }
+
+    .universal_rich .universal_hp_block_left .block_first_center_text {
+        grid-area: d;
+        padding: 0;
+    }
+
+    .universal_rich .universal_hp_block_left .img_left {
+        grid-area: a;
+    }
+
+    @media screen and (min-width: 666px) {
+
+        .universal_rich .left_universal,
+        .right_universal {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+            align-items: center;
+            text-align: left;
+        }
+
+        .universal_rich .right_universal_text {
+            grid-column-start: 2;
+            grid-row-start: 1;
+        }
+
+        .universal_rich .left_universal {
+            padding: 0 20px 40px;
+        }
+
+        .universal_rich .right_universal {
+            padding: 0 20px 40px;
+        }
+
+        .universal_rich .left_universal_text {
+            padding: 0;
+        }
+
+        .universal_rich .right_universal_text {
+            padding: 0;
+        }
+
+        .universal_rich .first {
+            padding-top: 40px;
+        }
+
+        .universal_rich .footnote {
+            padding: 20px 20px;
+        }
+
+        .universal_rich .block_first_center {
+            padding-top: 30px;
+        }
+
+        .universal_rich .block_first_center_text {
+            padding: 0 20px;
+        }
+
+        .universal_rich .universal_hp_block_left {
+            display: grid;
+            text-align: left;
+            padding: 40px 20px 0;
+            align-items: center;
+            grid-template-areas:
+                "a b"
+                "d d";
+            gap: 20px;
+        }
+
+        .universal_rich .universal_hp_block_right {
+            display: grid;
+            text-align: left;
+            padding: 40px 20px 0;
+            align-items: center;
+            grid-template-areas:
+                "b a"
+                "d d";
+            gap: 16px;
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+
+        .universal_rich p,
+        .universal_rich ul li {
+            line-height: 150%;
+            font-size: 18px;
+        }
+
+        .universal_rich h3 {
+            line-height: 130%;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .universal_rich h2 {
+            margin-top: 30px;
+            margin-bottom: 20px;
+            font-size: 30px;
+        }
+
+        .universal_rich .left_universal,
+        .right_universal {
+            gap: 40px;
+        }
+
+        .universal_rich .left_universal {
+            padding: 0 35px 60px;
+        }
+
+        .universal_rich .right_universal {
+            padding: 0 20px 60px;
+        }
+
+        .universal_rich .first {
+            padding-top: 40px;
+        }
+
+        .universal_rich .footnote {
+            padding: 40px 40px 20px;
+        }
+
+        .universal_rich .block_first_center {
+            padding-top: 40px;
+        }
+
+        .universal_rich .block_first_center_text {
+            padding: 0 35px;
+        }
+
+        .universal_rich .universal_hp_block_left {
+            padding: 40px 40px 0;
+            gap: 25px;
+        }
+
+        .universal_rich .universal_hp_block_right {
+            padding: 40px 40px 0;
+            gap: 25px;
+        }
+    }
+
+    @media screen and (min-width: 1366px) {
+
+        .universal_rich .left_universal,
+        .right_universal {
+            gap: 60px;
+        }
+
+        .universal_rich .left_universal {
+            padding: 0 80px 80px;
+        }
+
+        .universal_rich .right_universal {
+            padding: 0 80px 80px;
+        }
+
+        .universal_rich h3 {
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+
+        .universal_rich .indent p {
+            margin-top: 15px;
+        }
+
+        .universal_rich .first {
+            padding-top: 40px;
+        }
+
+        .universal_rich h2 {
+            margin-top: 40px;
+            margin-bottom: 25px;
+            font-size: 32px;
+        }
+
+        .universal_rich .footnote {
+            padding: 40px 80px 20px;
+        }
+
+        .universal_rich .block_first_center {
+            padding-top: 40px;
+        }
+
+        .universal_rich .block_first_center_text {
+            padding: 0 100px;
+        }
+
+        .universal_rich .universal_hp_block_left {
+            padding: 60px 80px 0;
+            gap: 25px;
+        }
+
+        .universal_rich .universal_hp_block_right {
+            padding: 60px 80px 0;
+            gap: 25px;
+        }
+    }
+</style>
+<div class="universal_rich">
+    <div class="left_universal first"><!-- first Додає відступ між блоками -->
+        <div class="left_universal_text" style="display: grid; gap: 20px">
+            <div class="universal_text_dable">
+                <h3 class="technical_title">HP Victus 15-fb0012ua (6G6X2EA)
+                </h3>
+                <p class="technical_description">Ноутбук Victus від HP з діагоналлю 15,6&nbsp;дюймів, оснащений
+                    процесором AMD Ryzen, має всі необхідні функції як для ігор, так і для вирішення повсякденних
+                    завдань. Розшир свої можливості за допомогою універсальної ігрової клавіатури і насолоджуйся якісним
+                    зображенням на екрані з високою частотою оновлення. Ефективна система охолодження не допустить
+                    перегріву навіть під час спекотних битв.
+                </p>
+            </div>
+            <!--  -->
+            <div class="universal_text_dable">
+                <h3 class="technical_title">Екран Full HD з частотою 144 Гц
+                </h3>
+                <p class="technical_description">Тепер можна забути про дратівливі затримки та розмите зображення. На
+                    екрані з частотою оновлення 144 Гц і роздільною здатністю Full HD (1080p) ігровий процес завжди буде
+                    чітким і плавним.*
+                </p>
+            </div>
+            <!--  -->
+            <div class="universal_text_dable">
+                <h3 class="technical_title">Нові можливості без кордонів
+                </h3>
+                <p class="technical_description">Процесори AMD Ryzen пропонують бездоганне поєднання функцій, що
+                    відкривають нові можливості для вас. Ефективно вирішуйте поставлені завдання завдяки високій
+                    продуктивності, миттєвому відгуку та найкращим у своєму класі можливостям підключення.
+                </p>
+            </div>
+        </div>
+        <img alt="" class="img_right"
+            src="https://i.citrus.world/uploads/content/product-photos/topchiy/August-2023/1691143427-726565-02.jpg" />
+    </div>
+    <div class="right_universal"><!-- first Додає відступ між блоками -->
+        <div class="right_universal_text" style="display: grid; gap: 20px">
+            <div class="universal_text_dable">
+                <h3 class="technical_title">Відеокарта NVIDIA GeForce RTX 3050
+                </h3>
+                <p class="technical_description">NVIDIA GeForce RTX 3050 дозволяє грати в найсучасніші ігри,
+                    використовуючи всі можливості Ampere - потужної архітектури NVIDIA RTX 2-го покоління. Неймовірна
+                    продуктивність завдяки покращеним ядрам трасування променів та тензорним ядрам, а також новим
+                    потоковим мультипроцесорам та високошвидкісній пам&#39;яті G6.*
+                </p>
+            </div>
+            <!--           -->
+            <div class="universal_text_dable">
+                <h3 class="technical_title">Легкість підключення
+                </h3>
+                <p class="technical_description">Оціни якість бездротового зв&#39;язку &mdash; комбінований модуль
+                    бездротового зв&#39;язку Wi-Fi 6 (2x2) та Bluetooth&nbsp;забезпечить стійкість усіх твоїх підключень
+                    та до 3 разів вищу швидкість передачі файлів у порівнянні з Wi-Fi 5.
+                </p>
+            </div>
+            <!--           -->
+            <div class="universal_text_dable">
+                <h3 class="technical_title">Технологія швидкого заряджання HP Fast Charge
+                </h3>
+                <p class="technical_description">Вам більше не доведеться чекати заряджання пристрою кілька годин.
+                    Акумулятор вимкненого пристрою можна зарядити з 0 до 50% лише за 30 хвилин.
+                </p>
+            </div>
+        </div>
+        <img alt="" class="img_left"
+            src="https://i.citrus.world/uploads/content/product-photos/topchiy/August-2023/1691143426-726565-01.jpg" />
+    </div>
+    <div class="left_universal "><!-- first Додає відступ між блоками -->
+        <div class="left_universal_text" style="display: grid; gap: 20px">
+            <div class="universal_text_dable">
+                <h3 class="technical_title">HD-камера HP Wide Vision
+                </h3>
+                <p class="technical_description">Завдяки широкому куту огляду (до 88 градусів) ви можете влаштовувати
+                    відеорозмови з усією сім&#39;єю або друзями, не турбуючись про якість зображення.
+                </p>
+            </div>
+            <!--  -->
+            <div class="universal_text_dable">
+                <h3 class="technical_title">Виняткова якість звуку
+                </h3>
+                <p class="technical_description">Завдяки двом динамікам HP, технології HP Audio Boost і налаштуванню
+                    аудіосистеми експертами Bang &amp; Olufsen ви не просто чутимете звук, ви його відчуєте.
+                </p>
+            </div>
+            <!--  -->
+            <div class="universal_text_dable">
+                <h3 class="technical_title">Роз&#39;єм SuperSpeed USB Type-C
+                </h3>
+                <p class="technical_description">Всього один порт USB-C зі швидкістю передачі даних до 5 Гбіт/с дозволяє
+                    як заряджати ваші пристрої, так і підключати зовнішній монітор. Порт влаштований таким чином, щоб не
+                    турбуватися про правильне положення гнізда.
+                </p>
+            </div>
+        </div>
+        <img alt="" class="img_right"
+            src="https://i.citrus.world/uploads/content/product-photos/topchiy/August-2023/1691143428-726565-06.jpg" />
+    </div>
+    <div class="footnote">
+        <p><sup><span>*</span></sup><span>Технічні характеристики залежать від конкретної моделі.</span>
+        </p>
+        <p><sup><span>**</span></sup><span>Всі зображення наведені в якості ілюстрації продукту. Фактичний вид і дизайн
+                можуть відрізнятися в залежності від характеристик конкретної моделі.</span>
+        </p>
+    </div>
+</div>
