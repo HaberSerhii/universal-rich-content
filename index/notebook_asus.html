@@ -1,0 +1,628 @@
+<style type="text/css">
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    .product__description.base-padding {
+        padding: 0;
+        border-radius: 0px;
+    }
+
+    .universal_rich img {
+        margin: 0;
+        border-radius: 10px;
+    }
+
+    .universal_rich p {
+        padding: 0;
+        margin: 0;
+        line-height: 130%;
+        font-weight: 400;
+        font-size: 14px;
+        font-family: "Roboto", sans-serif;
+        color: var(--color-gray-text);
+    }
+
+    .universal_rich h3 {
+        background: linear-gradient(90deg,
+                rgba(255, 134, 55, 1) 0%,
+                rgba(255, 104, 10, 1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 700;
+        margin-top: 0;
+        line-height: 130%;
+        margin-bottom: 10px;
+        font-size: 18px;
+        font-family: "Roboto", sans-serif;
+    }
+
+    .universal_rich h3:nth-child(2) {
+        margin-top: 20px;
+    }
+
+    .universal_rich h2 {
+        margin-top: 20px;
+        margin-bottom: 16px;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .universal_rich ul {
+        list-style: disc;
+        margin: 0;
+    }
+
+    .universal_rich ul li {
+        line-height: normal;
+        line-height: 130%;
+        font-weight: 400;
+        font-size: 14px;
+        font-family: "Roboto", sans-serif;
+        color: var(--color-gray-text);
+    }
+
+    .universal_rich {
+        overflow: hidden;
+        padding-bottom: 40px;
+        max-width: 1366px;
+        margin: 0 auto;
+    }
+
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    .universal_rich ul {
+        padding: 0;
+        padding-left: 25px;
+    }
+
+    .universal_rich ul li {
+        padding: 0;
+        padding-left: 10px;
+    }
+
+    .universal_rich div {
+        padding: 0;
+    }
+
+    div.universal_rich {
+        padding: 0;
+    }
+
+    .universal_rich br {
+        display: block;
+    }
+
+    .product__body .el-tabs__header {
+        z-index: 6;
+    }
+
+    .universal_rich {
+        max-width: 1366px;
+        margin: 0 auto;
+        text-align: center;
+        overflow-x: hidden;
+    }
+
+    .universal_rich img {
+        width: 100%;
+    }
+
+    .universal_rich .left_universal {
+        padding: 20px 16px 0;
+    }
+
+    .universal_rich .right_universal {
+        padding: 20px 16px 0;
+    }
+
+    .universal_rich .left_universal_text {
+        padding-bottom: 20px;
+    }
+
+    .universal_rich .right_universal_text {
+        padding: 0 14px 20px;
+    }
+
+    .universal_rich .indent p {
+        margin-top: 10px;
+    }
+
+    .universal_rich .footnote {
+        padding: 20px 16px;
+        text-align: left;
+    }
+
+    .universal_rich .footnote p {
+        font-size: 12px;
+        color: #959595;
+    }
+
+    .universal_rich .block_first_center {
+        text-align: center;
+        display: grid;
+        gap: 24px;
+        padding-top: 20px;
+    }
+
+    .universal_rich .block_first_center_text {
+        padding: 0 16px;
+    }
+
+    .universal_rich .universal_hp_block_left {
+        display: grid;
+        text-align: left;
+        padding: 40px 16px 0;
+        grid-template-areas:
+            "b"
+            "a"
+            "d";
+        gap: 16px;
+    }
+
+    .universal_rich .universal_hp_block_left .right_universal_text {
+        grid-area: b;
+        padding: 0;
+    }
+
+    .universal_rich .universal_hp_block_left .block_first_center_text {
+        grid-area: d;
+        padding: 0;
+    }
+
+    .universal_rich .universal_hp_block_left .img_left {
+        grid-area: a;
+    }
+
+    .universal_rich .universal_hp_block_right .right_universal_text {
+        grid-area: b;
+        padding: 0;
+    }
+
+    .universal_rich .universal_hp_block_right .block_first_center_text {
+        grid-area: d;
+        padding: 0;
+    }
+
+    .universal_rich .universal_hp_block_right .img_left {
+        grid-area: a;
+    }
+
+    .universal_rich .universal_hp_block_right {
+        display: grid;
+        text-align: left;
+        padding: 40px 16px 0;
+        grid-template-areas:
+            "b"
+            "a"
+            "d";
+        gap: 16px;
+    }
+
+    .universal_rich .universal_hp_block_left .right_universal_text {
+        grid-area: b;
+        padding: 0;
+    }
+
+    .universal_rich .universal_hp_block_left .block_first_center_text {
+        grid-area: d;
+        padding: 0;
+    }
+
+    .universal_rich .universal_hp_block_left .img_left {
+        grid-area: a;
+    }
+
+    @media screen and (min-width: 666px) {
+
+        .universal_rich .left_universal,
+        .right_universal {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+            align-items: center;
+            text-align: left;
+        }
+
+        .universal_rich .right_universal_text {
+            grid-column-start: 2;
+            grid-row-start: 1;
+        }
+
+        .universal_rich .left_universal {
+            padding: 0 20px 40px;
+        }
+
+        .universal_rich .right_universal {
+            padding: 0 20px 40px;
+        }
+
+        .universal_rich .left_universal_text {
+            padding: 0;
+        }
+
+        .universal_rich .right_universal_text {
+            padding: 0;
+        }
+
+        .universal_rich .first {
+            padding-top: 40px;
+        }
+
+        .universal_rich .footnote {
+            padding: 20px 20px;
+        }
+
+        .universal_rich .block_first_center {
+            padding-top: 30px;
+        }
+
+        .universal_rich .block_first_center_text {
+            padding: 0 20px;
+        }
+
+        .universal_rich .universal_hp_block_left {
+            display: grid;
+            text-align: left;
+            padding: 40px 20px 0;
+            align-items: center;
+            grid-template-areas:
+                "a b"
+                "d d";
+            gap: 20px;
+        }
+
+        .universal_rich .universal_hp_block_right {
+            display: grid;
+            text-align: left;
+            padding: 40px 20px 0;
+            align-items: center;
+            grid-template-areas:
+                "b a"
+                "d d";
+            gap: 16px;
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+
+        .universal_rich p,
+        .universal_rich ul li {
+            line-height: 150%;
+            font-size: 18px;
+        }
+
+        .universal_rich h3 {
+            line-height: 130%;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .universal_rich h2 {
+            margin-top: 30px;
+            margin-bottom: 20px;
+            font-size: 30px;
+        }
+
+        .universal_rich .left_universal,
+        .right_universal {
+            gap: 40px;
+        }
+
+        .universal_rich .left_universal {
+            padding: 0 35px 60px;
+        }
+
+        .universal_rich .right_universal {
+            padding: 0 20px 60px;
+        }
+
+        .universal_rich .first {
+            padding-top: 40px;
+        }
+
+        .universal_rich .footnote {
+            padding: 40px 40px 20px;
+        }
+
+        .universal_rich .block_first_center {
+            padding-top: 40px;
+        }
+
+        .universal_rich .block_first_center_text {
+            padding: 0 35px;
+        }
+
+        .universal_rich .universal_hp_block_left {
+            padding: 40px 40px 0;
+            gap: 25px;
+        }
+
+        .universal_rich .universal_hp_block_right {
+            padding: 40px 40px 0;
+            gap: 25px;
+        }
+    }
+
+    @media screen and (min-width: 1366px) {
+
+        .universal_rich .left_universal,
+        .right_universal {
+            gap: 60px;
+        }
+
+        .universal_rich .left_universal {
+            padding: 0 80px 80px;
+        }
+
+        .universal_rich .right_universal {
+            padding: 0 80px 80px;
+        }
+
+        .universal_rich h3 {
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+
+        .universal_rich .indent p {
+            margin-top: 15px;
+        }
+
+        .universal_rich .first {
+            padding-top: 40px;
+        }
+
+        .universal_rich h2 {
+            margin-top: 40px;
+            margin-bottom: 25px;
+            font-size: 32px;
+        }
+
+        .universal_rich .footnote {
+            padding: 40px 80px 20px;
+        }
+
+        .universal_rich .block_first_center {
+            padding-top: 40px;
+        }
+
+        .universal_rich .block_first_center_text {
+            padding: 0 100px;
+        }
+
+        .universal_rich .universal_hp_block_left {
+            padding: 60px 80px 0;
+            gap: 25px;
+        }
+
+        .universal_rich .universal_hp_block_right {
+            padding: 60px 80px 0;
+            gap: 25px;
+        }
+    }
+</style>
+<div class="universal_rich">
+    <div class="block_first_center">
+        <div class="block_first_center_text">
+            <h3 class="technical_title">ROG Strix G16 (2023) G614
+            </h3>
+            <p class="technical_description">Станьте сильнішими. Очольте ватагу.
+            </p>
+        </div>
+        <div class="universal_center_img"><img alt=""
+                src="https://i.citrus.world/uploads/content/product-photos/topchiy/May-2023/721891_01.jpg" />
+        </div>
+    </div>
+    <div class="block_first_center">
+        <div class="block_first_center_text">
+            <h3 class="technical_title">Енергія для ігор
+            </h3>
+            <p class="technical_description">Отримуйте більше кадрів і вигравайте більше матчів із новим ноутбуком Strix
+                G16. Беріть гору над супротивниками в найсучасніших змагальних іграх &ndash; у цьому допоможуть процесор
+                Intel&reg; Core&trade; i5-13450HX 13-го покоління та відеокарта NVIDIA GeForce RTX 4050 для ноутбуків. А
+                щоб розкрити весь потенціал цих потужних мікросхем, Strix G16 має спеціальний компонент MUX Switch та
+                підтримує технологію NVIDIA Advanced Optimus. Твердотільний накопичувач з інтерфейсом PCIe Gen4x4 та
+                оперативна пам&rsquo;ять DDR5 4800 МГц легко вмістять велику бібліотеку ігор та впораються з багатьма
+                активними програмами одночасно.
+            </p>
+        </div>
+        <div class="universal_center_img"><img alt=""
+                src="https://i.citrus.world/uploads/content/product-photos/topchiy/May-2023/1560203_02.jpg" />
+        </div>
+    </div>
+    <div class="block_first_center">
+        <div class="block_first_center_text">
+            <h3 class="technical_title">На всі руки майстер
+            </h3>
+            <p class="technical_description">Процесор &ndash; Intel&reg; Core&trade; i5-13450HX блискуче впорається з
+                будь-якою грою чи проєктом. Маючи 6 продуктивних (Performance) ядер та 4 енергоефективних (Efficiency)
+                ядер, він без зусиль подужає ігри класу AAA та відеотрансляції. Високопродуктивні компоненти &ndash; а
+                особливо сучасні відеокарти &ndash; потребують потужності. Відеокарта NVIDIA GeForce RTX&trade; 4050 для
+                ноутбуків повністю розкриває свій потенціал завдяки функції Dynamic Boost. Підвищений ліміт потужності
+                дозволить відеокарті показати ще більшу продуктивність у іграх, щоб досягти вищих показників FPS.
+            </p>
+        </div>
+        <div class="universal_center_img"><img alt=""
+                src="https://i.citrus.world/uploads/content/product-photos/topchiy/May-2023/1560203_03.jpg" />
+        </div>
+    </div>
+    <div class="block_first_center">
+        <div class="block_first_center_text">
+            <h3 class="technical_title">Грайте. Транслюйте. Творіть
+            </h3>
+            <p class="technical_description">Ноутбуки серії Strix G створені з прицілом на геймерів і, звісно,
+                розробників ігор. На Strix G16 працюють усі сучасні ігрові рушії, тож за цим ноутбуком ви зможете
+                розкрити свій творчий потенціал та створити нову культову гру. Займаєтеся комп&rsquo;ютерною графікою,
+                редагуванням відео, транслюванням гри чи пробуєте сили в анімації або розробці ігор &ndash; Strix G16
+                забезпечить всією обчислювальною потужністю, потрібною, щоб вивести ваші твори на новий рівень. Ноутбук
+                має процесор Intel&reg; Core&trade; i5 та відеокарту серії NVIDIA&reg; GeForce RTX&trade; 40 для
+                ноутбуків, які легко впораються зі складними проєктами на популярних платформах розробки Unity та
+                Autodesk. Ви здатні бути кращим у грі &ndash; та чи готові створити нову?
+            </p>
+        </div>
+        <div class="universal_center_img"><img alt=""
+                src="https://i.citrus.world/uploads/content/product-photos/topchiy/May-2023/1560203_04.jpg" />
+        </div>
+    </div>
+    <div class="block_first_center">
+        <div class="block_first_center_text">
+            <h3 class="technical_title">Rog Intelligent Cooling
+            </h3>
+            <p class="technical_description">Щоб забезпечити стабільну роботу таких потужних компонентів, ми змінили
+                конструкцію корпуса та материнської плати Strix G16. Ноутбук умістив усередині новий протяжний радіатор,
+                а щоб він краще відводив тепло, його ребра ще більше наблизили до вентиляційних отворів. Цей протяжний
+                радіатор складається з трьох різних секцій, які оточують материнську плату з усіх сторін щільно
+                розташованими ребрами загальною площею 174 183 мм&sup2;, що на 71% більше, ніж у моделі Strix G16 2022
+                року. Така конструкція збільшує кількість маршрутів, якими нагріте повітря може залишити пристрій, та
+                значно поліпшує загальну ефективність повітряного потоку. Нарешті, в той час як більшість ігрових
+                ноутбуків мають два вентилятори для охолодження, розробники G16 додали третій вентилятор, який обдуває
+                відеопроцесор і відеопам&rsquo;ять, що дозволило їм ще далі посунути межі робочих характеристик
+                пристрою. Доповнена сімома тепловими трубками та термоінтерфейсом із рідкого металу Conductonaut Extreme
+                на центральному та графічному процесорах, охолодження G16 являє собою справжнє диво техніки.
+            </p>
+        </div>
+        <div class="universal_center_img"><img alt=""
+                src="https://i.citrus.world/uploads/content/product-photos/topchiy/May-2023/1560203_05.jpg" />
+        </div>
+    </div>
+    <div class="block_first_center">
+        <div class="block_first_center_text">
+            <h3 class="technical_title">Rog Nebula Display
+            </h3>
+            <p class="technical_description">Щоб перемогти супротивника, вам потрібно бачити, як він наближається.
+                Ноутбук Strix G16 має два швидкісні варіанти дисплея для будь-якої ситуації, тож ви ніколи не проґавите
+                момент. Цей 16-дюймовий пристрій вперше пропонує дисплей Nebula формату QHD з частотою 240 Гц. Завдяки
+                цій панелі 16:10 з максимальною яскравістю 500 кд/м2, повним покриттям гами DCI-P3 та часом відгуку 3 мс
+                ноутбук Strix G16 дозволяє наводитися з точністю до пікселя навіть у несамовитій перестрілці. Також
+                Strix G16 може бути оснащений панеллю Full HD 165 Гц. Обидва варіанти мають фантастичну колірну гаму,
+                підтримують технології Dolby Vision та Adaptive-Sync, а співвідношення площі екрана до площі передньої
+                панелі в них складає 90%.*
+            </p>
+        </div>
+        <div class="universal_center_img"><img alt=""
+                src="https://i.citrus.world/uploads/content/product-photos/topchiy/May-2023/1560203_06.jpg" />
+        </div>
+    </div>
+    <div class="block_first_center">
+        <div class="block_first_center_text">
+            <h3 class="technical_title">Безмежні можливості для персоналізації
+            </h3>
+            <p class="technical_description">Armoury Crate &ndash; це ваш командний центр, у якому ви можете коригувати
+                налаштування, відстежувати температури або персоналізувати свій ноутбук. Завдяки моніторингу в реальному
+                часі ви можете спостерігати, чим займається ваша відеокарта, центральний процесор і пам&rsquo;ять.
+                Технологія Aura Sync дає змогу налаштовувати кольори RGB-підсвічування окремо для кожної гри. За
+                допомогою профілів вентиляторів і потужності ви можете на льоту змінювати шумові, енергетичні та теплові
+                характеристики ноутбука, а ексклюзивні акції для геймерів допоможуть вам поповнити свою бібліотеку.
+            </p>
+        </div>
+        <div class="universal_center_img"><img alt=""
+                src="https://i.citrus.world/uploads/content/product-photos/topchiy/May-2023/1560203_07.jpg" />
+        </div>
+    </div>
+    <div class="block_first_center">
+        <div class="block_first_center_text">
+            <h3 class="technical_title">Натисніть - і в бій!
+            </h3>
+            <p class="technical_description">Часом перемогу від поразки може відділяти одне натискання клавіші, тож ми
+                оснастили Strix G16 повнорозмірною клавіатурою, призначеною забезпечувати перемогу. Завдяки технології
+                раннього спрацювання клавіш &ndash; Overstroke &ndash; ноутбук краще контролюється під час роботи та
+                гри, а це означає менше натискань на клавіші та кращу швидкодію. Ця технологія орієнтована на геймерів:
+                проміжки між функціональними клавішами допомагають інтуїтивно розпізнавати клавіші, а спеціальні гарячі
+                клавіші забезпечують швидкий доступ до тих команд, які часто використовуються. Великі клавіші навігації
+                забезпечують точніше керування в розпалі бою. Великий тачпад полегшує навігацію в усіх програмах, а
+                повноколірне підсвічування окремих клавіш надає безмежні можливості для персоналізації: ви можете
+                вибрати для кожної клавіші індивідуальний колір із мільйонів кольорів. Ви також можете створювати різні
+                схеми для кожної гри в Armoury Crate, щоб кожна гра відчувалася по-своєму.
+            </p>
+        </div>
+        <div class="universal_center_img"><img alt=""
+                src="https://i.citrus.world/uploads/content/product-photos/topchiy/May-2023/1560203_08.jpg" />
+        </div>
+    </div>
+    <div class="block_first_center">
+        <div class="block_first_center_text">
+            <h3 class="technical_title">Звук студійної якості
+            </h3>
+            <p class="technical_description">Набір динаміків із технологією Dolby Atmos складається з двох
+                високочастотних динаміків і двох спрямованих вниз низькочастотних динаміків, які створюють реалістичну
+                звукову сцену під час гри. З форматом звуку Hi-Res ви будете чути музику у тій якості, у якій вона була
+                записана. Технологія двостороннього інтелектуальне шумозаглушення відфільтровує всі небажані фонові шуми
+                як із вхідного, так і з вихідного аудіосигналу, тож ніщо не буде відволікати вас під час дзвінків,
+                спілкування в чатах і трансляцій.
+            </p>
+        </div>
+        <div class="universal_center_img"><img alt=""
+                src="https://i.citrus.world/uploads/content/product-photos/topchiy/May-2023/1560203_09.jpg" />
+        </div>
+    </div>
+    <div class="block_first_center">
+        <div class="block_first_center_text">
+            <h3 class="technical_title">Двостороннє інтелектуальне шумозаглушення
+            </h3>
+            <p class="technical_description">Вдосконалена технологія інтелектуального шумозаглушення працює на
+                центральному процесорі, даючи відеокарті змогу натомість видавати кадри з більшою частотою. Вона працює
+                з будь-якими вхідними пристроями та вихідними сигналами, усуваючи шуми як з вашого власного мікрофона,
+                так і з вхідних аудіосигналів. В її налаштуваннях можна встановити фільтрацію шумів тільки для певних
+                програм, наприклад комунікаційних утиліт, щоб не зачіпати внутрішньоігрові звуки.
+            </p>
+        </div>
+        <div class="universal_center_img"><img alt=""
+                src="https://i.citrus.world/uploads/content/product-photos/topchiy/May-2023/721891_02.jpg" />
+        </div>
+    </div>
+    <div class="block_first_center">
+        <div class="block_first_center_text">
+            <h3 class="technical_title">Неперевершене звучання
+            </h3>
+            <p class="technical_description">З багатим звуком ігровий процес або медіаконтент стане ще більш
+                захоплюючим. Технологія Dolby Atmos формує віртуальний 5.1.2-канальний об&#39;ємний звук, який огортає
+                вас у просторі, з більш тонкими та багатими звуковими ефектами, які ви можете налаштувати за допомогою
+                попередньо заданих режимів, спеціально оптимізованих для фільмів та ігор.
+            </p>
+        </div>
+        <div class="universal_center_img"><img alt=""
+                src="https://i.citrus.world/uploads/content/product-photos/topchiy/May-2023/721891_03.jpg" />
+        </div>
+    </div>
+    <div class="block_first_center">
+        <div class="block_first_center_text">
+            <h3 class="technical_title">Енергія на весь день
+            </h3>
+            <p class="technical_description">З містким акумулятором ємністю 90 Вт&middot;год. ви завжди зможете
+                продовжити гру в дорозі й досягти більшого. Акумулятора вистачає надовго &ndash; до 12 годин відтворення
+                відео &ndash; тож вам не потрібно непокоїтися, що поруч не буде розеток. Ноутбук Strix G підтримує
+                швидке заряджання &ndash; від 0 до 50% всього за 30 хвилин. Ноутбук також можна підзаряджати в дорозі
+                через роз&rsquo;єм USB Type-C від зовнішнього акумулятора на ваш вибір.
+            </p>
+        </div>
+        <div class="universal_center_img"><img alt=""
+                src="https://i.citrus.world/uploads/content/product-photos/topchiy/May-2023/1560203_10.jpg" />
+        </div>
+    </div>
+    <div class="block_first_center">
+        <div class="block_first_center_text">
+            <h3 class="technical_title">Інтерфейси
+            </h3>
+            <p class="technical_description">У сучасних багатокористувацьких іграх необхідно мати стабільне
+                Інтернет-з&rsquo;єднання. Ноутбук Strix G16 готовий до бою, адже він має спеціальний порт RJ45, а також
+                найсучасніший бездротовий модуль Wi-Fi 6E. У мережах, що підтримують Wi-Fi 6E, ви зможете отримати усі
+                переваги найновішого діапазону бездротового зв&rsquo;язку, вільного від перешкод від інших бездротових
+                пристроїв, а отже, вільного й від затримок.
+            </p>
+        </div>
+        <div class="universal_center_img"><img alt=""
+                src="https://i.citrus.world/uploads/content/product-photos/topchiy/May-2023/1560203_11.jpg" />
+        </div>
+    </div>
+    <div class="footnote">
+        <p><sup><span>*</span></sup><span>Технічні характеристики залежать від конкретної моделі.</span>
+        </p>
+        <p><sup><span>**</span></sup><span>Всі зображення наведені в якості ілюстрації продукту. Фактичний вид і дизайн
+                можуть відрізнятися в залежності від характеристик конкретної моделі.</span>
+        </p>
+    </div>
+</div>
