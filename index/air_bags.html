@@ -1,0 +1,476 @@
+<!-- !!!! СТИЛІ - Обов'язково вставити зверху !!!! -->
+<style type="text/css">
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    .product__description.base-padding {
+        padding: 0;
+        border-radius: 0px;
+    }
+
+    .universal_rich img {
+        margin: 0;
+        border-radius: 10px;
+    }
+
+    .universal_rich p {
+        padding: 0;
+        margin: 0;
+        line-height: 130%;
+        font-weight: 400;
+        font-size: 14px;
+        font-family: "Roboto", sans-serif;
+        color: var(--color-gray-text);
+    }
+
+    .universal_rich h3 {
+        background: linear-gradient(90deg,
+                rgba(255, 134, 55, 1) 0%,
+                rgba(255, 104, 10, 1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 700;
+        margin-top: 0;
+        line-height: 130%;
+        margin-bottom: 10px;
+        font-size: 18px;
+        font-family: "Roboto", sans-serif;
+    }
+
+    .universal_rich h3:nth-child(2) {
+        margin-top: 20px;
+    }
+
+    .universal_rich h2 {
+        margin-top: 20px;
+        margin-bottom: 16px;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .universal_rich ul {
+        list-style: disc;
+        margin: 0;
+    }
+
+    .universal_rich ul li {
+        line-height: normal;
+        line-height: 130%;
+        font-weight: 400;
+        font-size: 14px;
+        font-family: "Roboto", sans-serif;
+        color: var(--color-gray-text);
+    }
+
+    .universal_rich {
+        overflow: hidden;
+        padding-bottom: 40px;
+        max-width: 1366px;
+        margin: 0 auto;
+    }
+
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    .universal_rich ul {
+        padding: 0;
+        padding-left: 25px;
+    }
+
+    .universal_rich ul li {
+        padding: 0;
+        padding-left: 10px;
+    }
+
+    .universal_rich div {
+        padding: 0;
+    }
+
+    div.universal_rich {
+        padding: 0;
+    }
+
+    .universal_rich br {
+        display: block;
+    }
+
+    .product__body .el-tabs__header {
+        z-index: 6;
+    }
+
+    .universal_rich {
+        max-width: 1366px;
+        margin: 0 auto;
+        text-align: center;
+        overflow-x: hidden;
+    }
+
+    .universal_rich img {
+        width: 100%;
+    }
+
+    .universal_rich .left_universal {
+        padding: 20px 16px 0;
+    }
+
+    .universal_rich .right_universal {
+        padding: 20px 16px 0;
+    }
+
+    .universal_rich .left_universal_text {
+        padding-bottom: 20px;
+    }
+
+    .universal_rich .right_universal_text {
+        padding: 0 14px 20px;
+    }
+
+    .universal_rich .indent p {
+        margin-top: 10px;
+    }
+
+    .universal_rich .footnote {
+        padding: 20px 16px;
+        text-align: left;
+    }
+
+    .universal_rich .footnote p {
+        font-size: 12px;
+        color: #959595;
+    }
+
+    .universal_rich .block_first_center {
+        text-align: center;
+        display: grid;
+        gap: 24px;
+        padding-top: 20px;
+    }
+
+    .universal_rich .block_first_center_text {
+        padding: 0 16px;
+    }
+
+    .universal_rich .universal_hp_block_left {
+        display: grid;
+        text-align: left;
+        padding: 40px 16px 0;
+        grid-template-areas:
+            "b"
+            "a"
+            "d";
+        gap: 16px;
+    }
+
+    .universal_rich .universal_hp_block_left .right_universal_text {
+        grid-area: b;
+        padding: 0;
+    }
+
+    .universal_rich .universal_hp_block_left .block_first_center_text {
+        grid-area: d;
+        padding: 0;
+    }
+
+    .universal_rich .universal_hp_block_left .img_left {
+        grid-area: a;
+    }
+
+    .universal_rich .universal_hp_block_right .right_universal_text {
+        grid-area: b;
+        padding: 0;
+    }
+
+    .universal_rich .universal_hp_block_right .block_first_center_text {
+        grid-area: d;
+        padding: 0;
+    }
+
+    .universal_rich .universal_hp_block_right .img_left {
+        grid-area: a;
+    }
+
+    .universal_rich .universal_hp_block_right {
+        display: grid;
+        text-align: left;
+        padding: 40px 16px 0;
+        grid-template-areas:
+            "b"
+            "a"
+            "d";
+        gap: 16px;
+    }
+
+    .universal_rich .universal_hp_block_left .right_universal_text {
+        grid-area: b;
+        padding: 0;
+    }
+
+    .universal_rich .universal_hp_block_left .block_first_center_text {
+        grid-area: d;
+        padding: 0;
+    }
+
+    .universal_rich .universal_hp_block_left .img_left {
+        grid-area: a;
+    }
+
+    @media screen and (min-width: 666px) {
+
+        .universal_rich .left_universal,
+        .right_universal {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+            align-items: center;
+            text-align: left;
+        }
+
+        .universal_rich .right_universal_text {
+            grid-column-start: 2;
+            grid-row-start: 1;
+        }
+
+        .universal_rich .left_universal {
+            padding: 0 20px 40px;
+        }
+
+        .universal_rich .right_universal {
+            padding: 0 20px 40px;
+        }
+
+        .universal_rich .left_universal_text {
+            padding: 0;
+        }
+
+        .universal_rich .right_universal_text {
+            padding: 0;
+        }
+
+        .universal_rich .first {
+            padding-top: 40px;
+        }
+
+        .universal_rich .footnote {
+            padding: 20px 20px;
+        }
+
+        .universal_rich .block_first_center {
+            padding-top: 30px;
+        }
+
+        .universal_rich .block_first_center_text {
+            padding: 0 20px;
+        }
+
+        .universal_rich .universal_hp_block_left {
+            display: grid;
+            text-align: left;
+            padding: 40px 20px 0;
+            align-items: center;
+            grid-template-areas:
+                "a b"
+                "d d";
+            gap: 20px;
+        }
+
+        .universal_rich .universal_hp_block_right {
+            display: grid;
+            text-align: left;
+            padding: 40px 20px 0;
+            align-items: center;
+            grid-template-areas:
+                "b a"
+                "d d";
+            gap: 16px;
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+
+        .universal_rich p,
+        .universal_rich ul li {
+            line-height: 150%;
+            font-size: 18px;
+        }
+
+        .universal_rich h3 {
+            line-height: 130%;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .universal_rich h2 {
+            margin-top: 30px;
+            margin-bottom: 20px;
+            font-size: 30px;
+        }
+
+        .universal_rich .left_universal,
+        .right_universal {
+            gap: 40px;
+        }
+
+        .universal_rich .left_universal {
+            padding: 0 35px 60px;
+        }
+
+        .universal_rich .right_universal {
+            padding: 0 20px 60px;
+        }
+
+        .universal_rich .first {
+            padding-top: 40px;
+        }
+
+        .universal_rich .footnote {
+            padding: 40px 40px 20px;
+        }
+
+        .universal_rich .block_first_center {
+            padding-top: 40px;
+        }
+
+        .universal_rich .block_first_center_text {
+            padding: 0 35px;
+        }
+
+        .universal_rich .universal_hp_block_left {
+            padding: 40px 40px 0;
+            gap: 25px;
+        }
+
+        .universal_rich .universal_hp_block_right {
+            padding: 40px 40px 0;
+            gap: 25px;
+        }
+    }
+
+    @media screen and (min-width: 1366px) {
+
+        .universal_rich .left_universal,
+        .right_universal {
+            gap: 60px;
+        }
+
+        .universal_rich .left_universal {
+            padding: 0 80px 80px;
+        }
+
+        .universal_rich .right_universal {
+            padding: 0 80px 80px;
+        }
+
+        .universal_rich h3 {
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+
+        .universal_rich .indent p {
+            margin-top: 15px;
+        }
+
+        .universal_rich .first {
+            padding-top: 40px;
+        }
+
+        .universal_rich h2 {
+            margin-top: 40px;
+            margin-bottom: 25px;
+            font-size: 32px;
+        }
+
+        .universal_rich .footnote {
+            padding: 40px 80px 20px;
+        }
+
+        .universal_rich .block_first_center {
+            padding-top: 40px;
+        }
+
+        .universal_rich .block_first_center_text {
+            padding: 0 100px;
+        }
+
+        .universal_rich .universal_hp_block_left {
+            padding: 60px 80px 0;
+            gap: 25px;
+        }
+
+        .universal_rich .universal_hp_block_right {
+            padding: 60px 80px 0;
+            gap: 25px;
+        }
+    }
+</style>
+<div class="universal_rich"><!-- !!!Блок с характеристиками списком КАРТИНКА СПРАВА!!! -->
+    <div class="left_universal first"><!-- first добовляет пробел сверху -->
+        <div class="left_universal_text  ">
+            <h3 class="technical_title">Мішок Lydsto з автоматичним надуванням (YC-CQSF03)
+            </h3>
+            <ul>
+                <li>Швидке надування однією кнопкою</li>
+                <li>Ергономічний дизайн</li>
+                <li>Для дому, роботи та відпочинку</li>
+                <li>Компактне зберігання та транспортування</li>
+            </ul>
+        </div>
+        <img alt="Мішок Lydsto з автоматичним надуванням (YC-CQSF03)" class="img_right"
+            src="https://i.citrus.world/uploads/content/product-photos/deyneko/august2023/naduvnye-matrasy_722629_1.jpg" />
+    </div>
+    <!-- !!!!Обычный рабочий блок КАРТИНКА Слева!!! -->
+    <div class="right_universal first"><!-- first добовляет пробел сверху -->
+        <div class="right_universal_text   ">
+            <h3 class="technical_title">Зручне рішення для дому та подорожей
+            </h3>
+            <p class="technical_description">Крісло має зручну форму, а спеціальна конструкція та матеріали забезпечують
+                комфортне сидіння. Крім того, воно має гарну підтримку спини, що робить його ідеальним для відпочинку на
+                природі або під час пікніків.
+            </p>
+        </div>
+        <img alt="Мішок Lydsto з автоматичним надуванням (YC-CQSF03)" class="img_left "
+            src="https://i.citrus.world/uploads/content/product-photos/deyneko/august2023/naduvnye-matrasy_722629_2.jpg" />
+    </div>
+    <!-- !!!!Обычный рабочий блок  КАРТИНКА СПРАВА!!! -->
+    <div class="left_universal first"><!-- first добовляет пробел сверху -->
+        <div class="left_universal_text   ">
+            <h3 class="technical_title">Надійні матеріали
+            </h3>
+            <p class="technical_description">Надувне крісло Hydsto NUT Automatic дуже міцне і виготовлене з
+                водонепроникного матеріалу, що дозволяє використовувати його на пляжі або басейні. Верхня частина
+                виконана з текстилю, приємного до шкіри, що робить крісло комфортнішим.
+            </p>
+        </div>
+        <img alt="Мішок Lydsto з автоматичним надуванням (YC-CQSF03)" class="img_right "
+            src="https://i.citrus.world/uploads/content/product-photos/deyneko/august2023/naduvnye-matrasy_722629_3.jpg" />
+    </div>
+    <!-- ----------------------------------------------------------------------------------------------------------------------><!-- !!!!Обычный рабочий блок КАРТИНКА Слева!!! -->
+    <div class="right_universal first"><!-- first добовляет пробел сверху -->
+        <div class="right_universal_text   ">
+            <h3 class="technical_title">Вбудований автоматичний насос
+            </h3>
+            <p class="technical_description">Крісло надується за кілька хвилин завдяки автоматичному насосу, що працює
+                від акумулятора ємністю 2000 мАг. Сам акумулятор з&#39;яжається від будь-якого доступного джерела через
+                USB-Type C порт. Крім того, крісло вміє автоматично здуватись.
+            </p>
+        </div>
+        <img alt="Мішок Lydsto з автоматичним надуванням (YC-CQSF03)" class="img_left "
+            src="https://i.citrus.world/uploads/content/product-photos/deyneko/august2023/naduvnye-matrasy_722629_4.jpg" />
+    </div>
+    <!-- !!!!Обычный рабочий блок  КАРТИНКА СПРАВА!!! -->
+    <div class="left_universal first"><!-- first добовляет пробел сверху -->
+        <div class="left_universal_text   ">
+            <h3 class="technical_title">Легко брати із собою
+            </h3>
+            <p class="technical_description">Крісло легко складається і компактно упаковується у спеціальну сумку, а
+                його вага становить трохи більше 2 кілограмів, тому це крісло зручно брати з собою в поїздку або на
+                пікнік.
+            </p>
+        </div>
+        <img alt="Мішок Lydsto з автоматичним надуванням (YC-CQSF03)" class="img_right "
+            src="https://i.citrus.world/uploads/content/product-photos/deyneko/august2023/naduvnye-matrasy_722629_5.jpg" />
+    </div>
+</div>
