@@ -149,6 +149,7 @@ img {
   max-width: 360px;
   background-color: whitesmoke;
 }
+
 .carousel-control-prev {
   left: -140px;
 }
@@ -156,10 +157,15 @@ img {
   right: -140px;
 }
 .carousel__card-picture {
-  border-radius: 10px 10px 0 0;
-  text-align: center;
-  background-color: rgb(106, 36, 106);
-  height: 100px;
+
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+    background-color: rgb(106, 36, 106);
+    height: 150px;
+}
+.carousel__card-picture > img {
+    height: 150px;
+
 }
 .image-title,
 .card-title-rich,
