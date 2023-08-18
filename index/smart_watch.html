@@ -1,0 +1,737 @@
+<!-- !!!! СТИЛІ - Обов'язково вставити зверху v1.2 (18.08.23)!!!! -->
+<style>
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    .product__description.base-padding {
+        padding: 0;
+        /* border-radius: 0px; */
+    }
+
+    .universal_rich img {
+        margin: 0;
+        border-radius: 10px;
+    }
+
+    .universal_rich p {
+        padding: 0;
+        margin: 0;
+        line-height: 130%;
+        font-weight: 400;
+        font-size: 14px;
+        font-family: "Roboto", sans-serif;
+        color: var(--color-gray-text);
+    }
+
+    .universal_rich h3 {
+        background: linear-gradient(90deg,
+                rgba(255, 134, 55, 1) 0%,
+                rgba(255, 104, 10, 1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 700;
+        margin-top: 0;
+        line-height: 130%;
+        margin-bottom: 10px;
+        font-size: 18px;
+        font-family: "Roboto", sans-serif;
+    }
+
+    .universal_rich h3:nth-child(2) {
+        margin-top: 20px;
+    }
+
+    .universal_rich h2 {
+        margin-top: 20px;
+        margin-bottom: 16px;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .universal_rich ul {
+        list-style: disc;
+        margin: 0;
+    }
+
+    .universal_rich ul li {
+        line-height: normal;
+        line-height: 130%;
+        font-weight: 400;
+        font-size: 14px;
+        font-family: "Roboto", sans-serif;
+        color: var(--color-gray-text);
+    }
+
+
+    .universal_rich ul {
+        padding: 0;
+        padding-left: 25px;
+    }
+
+    .universal_rich ul li {
+        padding: 0;
+        padding-left: 10px;
+    }
+
+    .universal_rich div {
+        padding: 0;
+    }
+
+    div.universal_rich {
+        padding: 0;
+    }
+
+    .universal_rich br {
+        display: block;
+    }
+
+    .product__body .el-tabs__header {
+        z-index: 6;
+    }
+
+    .universal_rich {
+        max-width: 1366px;
+        margin: 0 auto;
+        text-align: center;
+        overflow-x: hidden;
+        padding-bottom: 40px;
+    }
+
+    .universal_rich img {
+        width: 100%;
+    }
+
+    .universal_rich .left_universal {
+        padding: 20px 16px 0;
+    }
+
+    .universal_rich .right_universal {
+        padding: 20px 16px 0;
+    }
+
+    .universal_rich .left_universal_text {
+        padding-bottom: 20px;
+    }
+
+    .universal_rich .right_universal_text {
+        padding: 0 14px 20px;
+    }
+
+    .universal_rich .indent p {
+        margin-top: 10px;
+    }
+
+    .universal_rich .footnote {
+        padding: 20px 16px;
+        text-align: left;
+    }
+
+    .universal_rich .footnote p {
+        font-size: 12px;
+        color: #959595;
+    }
+
+    .universal_rich .block_first_center {
+        text-align: center;
+        display: grid;
+        gap: 24px;
+        padding-top: 20px;
+    }
+
+    .universal_rich .block_first_center_text {
+        padding: 0 16px;
+    }
+
+    .universal_rich .block_first_center_text_left {
+        padding: 0 16px;
+        text-align: left;
+    }
+
+    .universal_rich .universal_hp_block_left {
+        display: grid;
+        text-align: left;
+        padding: 40px 16px 0;
+        grid-template-areas:
+            "b"
+            "a"
+            "d";
+        gap: 16px;
+    }
+
+    .universal_rich .universal_hp_block_left .right_universal_text {
+        grid-area: b;
+        padding: 0;
+    }
+
+    .universal_rich .universal_hp_block_left .block_first_center_text {
+        grid-area: d;
+        padding: 0;
+    }
+
+    .universal_rich .universal_hp_block_left .img_left {
+        grid-area: a;
+    }
+
+    .universal_rich .universal_hp_block_right .right_universal_text {
+        grid-area: b;
+        padding: 0;
+    }
+
+    .universal_rich .universal_hp_block_right .block_first_center_text {
+        grid-area: d;
+        padding: 0;
+    }
+
+    .universal_rich .universal_hp_block_right .img_left {
+        grid-area: a;
+    }
+
+    .universal_rich .universal_hp_block_right {
+        display: grid;
+        text-align: left;
+        padding: 40px 16px 0;
+        grid-template-areas:
+            "b"
+            "a"
+            "d";
+        gap: 16px;
+    }
+
+    .universal_rich .universal_hp_block_left .right_universal_text {
+        grid-area: b;
+        padding: 0;
+    }
+
+    .universal_rich .universal_hp_block_left .block_first_center_text {
+        grid-area: d;
+        padding: 0;
+    }
+
+    .universal_rich .universal_hp_block_left .img_left {
+        grid-area: a;
+    }
+
+    /* universal_side_by_side_block */
+
+    .universal_rich .universal_side_by_side_block {
+        padding: 30px 16px 0;
+        display: grid;
+        gap: 16px;
+    }
+
+    .universal_rich .universal_side_by_side_block .side_by_side {
+        display: grid;
+        gap: 16px;
+    }
+
+
+
+    .universal_rich .universal_side_by_side_block .side_by_side_text {
+        display: grid;
+        gap: 10px;
+    }
+
+    .universal_rich .universal_side_by_side_block .side_by_side_text .tehnic_text {
+        color: #959595;
+    }
+
+    .universal_rich .universal_side_by_side_block .side_by_side_text .footnote_text_side {
+        color: #959595;
+        font-size: 12px;
+    }
+
+    .universal_rich .universal_side_by_side_block h3 {
+        margin-bottom: 0;
+    }
+
+
+
+    @media screen and (min-width: 666px) {
+
+        .universal_rich .left_universal,
+        .right_universal {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+            align-items: center;
+            text-align: left;
+        }
+
+        .universal_rich .right_universal_text {
+            grid-column-start: 2;
+            grid-row-start: 1;
+        }
+
+        .universal_rich .left_universal {
+            padding: 0 20px 40px;
+        }
+
+        .universal_rich .right_universal {
+            padding: 0 20px 40px;
+        }
+
+        .universal_rich .left_universal_text {
+            padding: 0;
+        }
+
+        .universal_rich .right_universal_text {
+            padding: 0;
+        }
+
+        .universal_rich .first {
+            padding-top: 40px;
+        }
+
+        .universal_rich .footnote {
+            padding: 20px 20px;
+        }
+
+        .universal_rich .block_first_center {
+            padding-top: 30px;
+        }
+
+        .universal_rich .block_first_center_text {
+            padding: 0 20px;
+        }
+
+        .universal_rich .block_first_center_text_left {
+            padding: 0 20px;
+        }
+
+        .universal_rich .universal_hp_block_left {
+            display: grid;
+            text-align: left;
+            padding: 40px 20px 0;
+            align-items: center;
+            grid-template-areas:
+                "a b"
+                "d d";
+            gap: 20px;
+        }
+
+        .universal_rich .universal_hp_block_right {
+            display: grid;
+            text-align: left;
+            padding: 40px 20px 0;
+            align-items: center;
+            grid-template-areas:
+                "b a"
+                "d d";
+            gap: 16px;
+        }
+
+        /* universal_side_by_side_block */
+
+        .universal_rich .universal_side_by_side_block {
+            padding: 40px 32px 0;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            text-align: left;
+            align-items: flex-start;
+        }
+
+    }
+
+    @media screen and (min-width: 1024px) {
+
+        .universal_rich p,
+        .universal_rich ul li {
+            line-height: 150%;
+            font-size: 18px;
+        }
+
+        .universal_rich h3 {
+            line-height: 130%;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .universal_rich h2 {
+            margin-top: 30px;
+            margin-bottom: 20px;
+            font-size: 30px;
+        }
+
+        .universal_rich .left_universal,
+        .right_universal {
+            gap: 40px;
+        }
+
+        .universal_rich .left_universal {
+            padding: 0 35px 60px;
+        }
+
+        .universal_rich .right_universal {
+            padding: 0 20px 60px;
+        }
+
+        .universal_rich .first {
+            padding-top: 40px;
+        }
+
+        .universal_rich .footnote {
+            padding: 40px 40px 20px;
+        }
+
+        .universal_rich .block_first_center {
+            padding-top: 40px;
+        }
+
+        .universal_rich .block_first_center_text {
+            padding: 0 35px;
+        }
+
+        .universal_rich .block_first_center_text_left {
+            padding: 0 40px;
+        }
+
+        .universal_rich .universal_hp_block_left {
+            padding: 40px 40px 0;
+            gap: 25px;
+        }
+
+        .universal_rich .universal_hp_block_right {
+            padding: 40px 40px 0;
+            gap: 25px;
+        }
+
+        .universal_rich .universal_side_by_side_block {
+            padding: 40px 40px 0;
+            gap: 20px;
+        }
+
+        .universal_rich .universal_side_by_side_block .side_by_side_text .tehnic_text {
+            font-size: 16px;
+        }
+
+        .universal_rich .universal_side_by_side_block .side_by_side_text .footnote_text_side {
+            font-size: 14px;
+        }
+
+        .universal_rich .universal_side_by_side_block .side_by_side {
+            gap: 20px;
+        }
+    }
+
+    @media screen and (min-width: 1366px) {
+
+        .universal_rich .left_universal,
+        .right_universal {
+            gap: 60px;
+        }
+
+        .universal_rich .left_universal {
+            padding: 0 80px 80px;
+        }
+
+        .universal_rich .right_universal {
+            padding: 0 80px 80px;
+        }
+
+        .universal_rich h3 {
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+
+        .universal_rich .indent p {
+            margin-top: 15px;
+        }
+
+        .universal_rich .first {
+            padding-top: 40px;
+        }
+
+        .universal_rich h2 {
+            margin-top: 40px;
+            margin-bottom: 25px;
+            font-size: 32px;
+        }
+
+        .universal_rich .footnote {
+            padding: 40px 80px 20px;
+        }
+
+
+        .universal_rich .block_first_center {
+            padding-top: 40px;
+        }
+
+        .universal_rich .block_first_center_text {
+            padding: 0 100px;
+        }
+
+        .universal_rich .block_first_center_text_left {
+            padding: 0 80px;
+        }
+
+        .universal_rich .universal_hp_block_left {
+            padding: 60px 80px 0;
+            gap: 25px;
+        }
+
+        .universal_rich .universal_hp_block_right {
+            padding: 60px 80px 0;
+            gap: 25px;
+        }
+
+        .universal_rich .universal_side_by_side_block {
+            padding: 40px 80px 0;
+            gap: 24px;
+        }
+
+        .universal_rich .universal_side_by_side_block .side_by_side_text {
+            gap: 14px;
+        }
+    }
+</style>
+<div class="universal_rich"><!-- !!!Блок заглавный по цетру!!! -->
+    <div class="block_first_center">
+        <div class="block_first_center_text">
+            <h3 class="technical_title">Amazfit Bip 5
+            </h3>
+            <p class="technical_description">Розумний годинник із надвеликим екраном та багатою екосистемою застосунків
+            </p>
+        </div>
+    </div>
+    <!--!!! Блок для тройного абзаца с дувумя заголовками КАРТИНКА СЛЕВА!!! -->
+    <div class="right_universal first"><!-- first добовляет пробел сверху -->
+        <div class="right_universal_text   " style="display: grid; gap: 20px;">
+            <div class="universal_text_dable">
+                <h3 class="technical_title">Більше місця, більше задоволення
+                </h3>
+                <p class="technical_description">Надвеликий дисплей Amazfit Bip 5 діагоналлю 1,91 дюйма наочно
+                    демонструє, що коли на екрані більше місця, то враження значно кращі. Цей сенсорний РК-екран з
+                    високою роздільною здатністю, наповнений яскравими кольорами, робить перевірку ваших даних не лише
+                    інформативною, а й дійсно захоплюючою.
+                </p>
+            </div>
+            <!--           -->
+            <div class="universal_text_dable">
+                <h3 class="technical_title">Створіть свою власну атмосферу
+                </h3>
+                <p class="technical_description">Зробіть смарт-годинник відображенням себе. Amazfit Bip 5 пропонує
+                    користувачеві багато можливостей для персоналізації. Вибирайте з величезної кількості циферблатів,
+                    що миттєво завантажуються, налаштовуйте які дані ви хочете бачити на головному екрані, а також
+                    встановлюйте свої власні фотографії у якості фону. Крім того, ви можете завантажити відразу три
+                    фотографії, і годинник буде перемикатися між ними щоразу, коли ви вмикаєте дисплей.
+                </p>
+            </div>
+            <!--           -->
+            <div class="universal_text_dable">
+                <h3 class="technical_title">Легкий та стильний
+                </h3>
+                <p class="technical_description">З Amazfit Bip 5 на тренуваннях ви виглядатимете так само елегантно та
+                    стильно, як і в місті. Завдяки надлегкій вазі (26 г без ремінця) і сучасному дизайну цей розумний
+                    годинник буде виглядати природно практично з будь-яким вашим вбранням, а приємний для шкіри
+                    силіконовий ремінець зручний для носіння протягом усього дня і навіть вночі.
+                </p>
+            </div>
+        </div>
+        <img alt="" class="img_left "
+            src="https://i.citrus.world/uploads/content/product-photos/deyneko/august2023/smart-chasy_726974_1.jpg" />
+    </div>
+    <!--!!! Блок для тройного абзаца с дувумя заголовками КАРТИНКА С ПРАВА!!! -->
+    <div class="left_universal first"><!-- first добовляет пробел сверху -->
+        <div class="left_universal_text   " style="display: grid; gap: 20px;">
+            <div class="universal_text_dable">
+                <h3 class="technical_title">Більше можливостей із ZeppOS 2.0
+                </h3>
+                <p class="technical_description">Ще одна незаперечна перевага цього смарт-годинника &ndash;
+                    енергоефективна та інтуїтивно зрозуміла операційна система ZeppOS 2.0, яка забезпечує ще більш
+                    плавний користувальницький інтерфейс, більш тривалий моніторинг працездатності та багату екосистему
+                    завантажуваних міні-додатків та ігор. Вибирайте з більш ніж 70 застосунків, щоб зробити свій
+                    аксесуар по-справжньому корисним помічником на кожен день та ще ефективніше дбати про своє
+                    здоров&#39;я.
+                </p>
+            </div>
+            <!--  -->
+            <div class="universal_text_dable">
+                <h3 class="technical_title">Телефонні дзвінки через Bluetooth
+                </h3>
+                <p class="technical_description">Залишайтеся на зв&#39;язку з усіма важливими людьми у вашому житті,
+                    навіть перебуваючи в дорозі. Завдяки вбудованому мікрофону та динаміку можна набрати номер або
+                    відповісти на вхідний дзвінок прямо на годиннику завдяки його з&#39;єднанню по Bluetooth з
+                    телефоном.
+                </p>
+            </div>
+            <!--  -->
+            <div class="universal_text_dable">
+                <h3 class="technical_title">Ранкова статистика
+                </h3>
+                <p class="technical_description">Бажаєте дізнатися погоду на сьогодні, щоб вибрати відповідне вбрання
+                    або перевірити свій розклад на день? Легко. Щоб допомогти вам розпочати день правильно, годинник
+                    може надавати чітке зведення інформації відразу після вашого пробудження. Причому ви самі можете
+                    налаштувати, який контент буде включений у ваше оновлення і вибирати тільки ту інформацію, яка вас
+                    цікавить.
+                </p>
+            </div>
+        </div>
+        <img alt="" class="img_right "
+            src="https://i.citrus.world/uploads/content/product-photos/deyneko/august2023/smart-chasy_726974_2.jpg" />
+    </div>
+    <!--!!! Блок для тройного абзаца с дувумя заголовками КАРТИНКА СЛЕВА!!! -->
+    <div class="right_universal first"><!-- first добовляет пробел сверху -->
+        <div class="right_universal_text   " style="display: grid; gap: 20px;">
+            <div class="universal_text_dable">
+                <h3 class="technical_title">Швидкий доступ до потрібних даних
+                </h3>
+                <p class="technical_description">Проведіть пальцем праворуч по головному екрану, щоб швидко побачити всю
+                    важливу для вас інформацію. Або проведіть пальцем ліворуч, щоб знайти віджети для програм, до яких
+                    ви хочете швидко отримати доступ. Налаштуйте список на сторінці &laquo;Переваги&raquo; в
+                    налаштуваннях годинника для більш розумного підходу до персоналізації.
+                </p>
+            </div>
+            <!--           -->
+            <div class="universal_text_dable">
+                <h3 class="technical_title">Понад 120 спортивних режимів
+                </h3>
+                <p class="technical_description">Неважливо якому саме типу тренування ви віддаєте перевагу, ви, швидше
+                    за все, знайдете для нього спортивний режим серед 120 вбудованих у програму Amazfit Bip 5. Тому всі
+                    заняття будуть під вашим контролем. Крім того, годинник також можна налаштувати на автоматичне
+                    визначення одного з 7 видів спорту: біг на вулиці, біг на біговій доріжці, ходьба, ходьба у
+                    приміщенні, велотренування на відкритому повітрі, гребний тренажер, еліптичний тренажер.(1) А
+                    водонепроникний дизайн дозволяє використовувати годинник навіть під дощем чи у інших несприятливих
+                    умовах.(3)
+                </p>
+            </div>
+            <!--           -->
+            <div class="universal_text_dable">
+                <h3 class="technical_title">Точне GPS-відстеження
+                </h3>
+                <p class="technical_description">Amazfit Bip 5 підтримують чотири системи супутникового позиціонування,
+                    щоб допомогти вам точно оцінити ваші переміщення за допомогою GPS під час занять спортом на свіжому
+                    повітрі.
+                </p>
+            </div>
+        </div>
+        <img alt="" class="img_left "
+            src="https://i.citrus.world/uploads/content/product-photos/deyneko/august2023/smart-chasy_726974_3.jpg" />
+    </div>
+    <!--!!! Блок для тройного абзаца с дувумя заголовками КАРТИНКА С ПРАВА!!! -->
+    <div class="left_universal first"><!-- first добовляет пробел сверху -->
+        <div class="left_universal_text   " style="display: grid; gap: 20px;">
+            <div class="universal_text_dable">
+                <h3 class="technical_title">Функція озвучування даних
+                </h3>
+                <p class="technical_description">Налаштуйте годинник на зачитування даних про спортивний режим у режимі
+                    реального часу через динамік годинника, і вам навіть не потрібно буде піднімати зап&#39;ястя, щоб
+                    перевірити свої результати. * Ця функція доступна лише англійською мовою.
+                </p>
+            </div>
+            <!--  -->
+            <div class="universal_text_dable">
+                <h3 class="technical_title">Діліться своїми результатами
+                </h3>
+                <p class="technical_description">Завдяки партнерству між Amazfit та adidas Runtastic, ваші бігові
+                    маршрути та дані про результати можуть бути синхронізовані з вашим обліковим записом adidas Running
+                    разом із Strava, komoot та Relive та навіть додатками для смартфонів, такими як Apple Health та
+                    Google Fit.
+                </p>
+            </div>
+            <!--  -->
+            <div class="universal_text_dable">
+                <h3 class="technical_title">Цілодобовий моніторинг здоров&#39;я
+                </h3>
+                <p class="technical_description">З Amazfit Bip 5, ви можете контролювати насичення крові киснем, частоту
+                    серцевих скорочень та рівень стресу протягом усього дня. А також одночасно перевіряти ці три
+                    показники одним простим натисканням у будь-який час, коли вам потрібна швидка перевірка свого стану.
+                </p>
+            </div>
+        </div>
+        <img alt="" class="img_right "
+            src="https://i.citrus.world/uploads/content/product-photos/deyneko/august2023/smart-chasy_726974_4.jpg" />
+    </div>
+    <!--!!! Блок для тройного абзаца с дувумя заголовками КАРТИНКА СЛЕВА!!! -->
+    <div class="right_universal first"><!-- first добовляет пробел сверху -->
+        <div class="right_universal_text   " style="display: grid; gap: 20px;">
+            <div class="universal_text_dable">
+                <h3 class="technical_title">Відстеження менструального циклу
+                </h3>
+                <p class="technical_description">Отримуйте прогнози та нагадування про майбутні фертильні та
+                    менструальні періоди, щоб зменшити стрес і краще планувати свої справи. Навіть якщо ви забудете, цей
+                    годинник завжди нагадає вам вчасно.
+                </p>
+            </div>
+            <!--           -->
+            <div class="universal_text_dable">
+                <h3 class="technical_title">Система оцінки здоров&#39;я PAI
+                </h3>
+                <p class="technical_description">PAI перетворює комплексні дані про вашу активність та частоту серцевих
+                    скорочень у щотижневі показники, щоб ви могли легко зрозуміти свій фізичний стан. Таким чином, чим
+                    вища ваша активність, тим вищий буде ваш бал. Максимальне можливе значення PAI становить 100 балів.
+                </p>
+            </div>
+            <!--           -->
+            <div class="universal_text_dable">
+                <h3 class="technical_title">Більше енергії
+                </h3>
+                <p class="technical_description">Плануєте поїздку? З Amazfit Bip 5 ви можете не переживати про те, що
+                    ваш годинник може не вчасно розрядитися і ви залишитеся без свого незамінного помічника. Аксесуар
+                    оснащений потужним акумулятором, який дозволяє йому працювати до 10 днів при звичайному використанні
+                    або близько 26 днів у режимі заощадження батареї (2). Тому ви можете заощадити місце на зарядному
+                    пристрої та взяти з собою більше інших важливих речей.
+                </p>
+            </div>
+        </div>
+        <img alt="" class="img_left "
+            src="https://i.citrus.world/uploads/content/product-photos/deyneko/august2023/smart-chasy_726974_5.jpg" />
+    </div>
+    <!--!!! Блок для двойного абзаца с дувумя заголовками КАРТИНКА С ПРАВА!!! -->
+    <div class="left_universal first"><!-- first добовляет пробел сверху -->
+        <div class="left_universal_text   " style="display: grid; gap: 20px;">
+            <div class="universal_text_dable">
+                <h3 class="technical_title">Керуйте своїм днем розумніше
+                </h3>
+                <p class="technical_description">Насолоджуйтесь величезним вибором функцій, які подбають про дрібниці
+                    замість вас. Прогноз погоди, будильники, нагадування про активність, керування музикою на смартфоні
+                    та багато іншого буде доступне прямо з вашого зап&#39;ястя. Ви навіть можете перевіряти повідомлення
+                    з телефону на годиннику та включати режим &laquo;Не турбувати&raquo;, коли хочете відпочити від
+                    усього. Цей розумний годинник створений, щоб зробити кожен ваш день простішим.
+                </p>
+            </div>
+            <div class="universal_text_dable">
+                <h3 class="technical_title">Застосунок Zepp
+                </h3>
+                <p class="technical_description">Zepp &ndash; це єдиний та максимально зручний центр управління всіма
+                    можливостями годинника та зберігання ваших статистичних даних. Увійдіть до програми для перевірки
+                    детальної інформації про здоров&#39;я та вправи, доступу до циферблатів годинника та міні-додатків,
+                    підключення до облікових записів фітнес-додатків, оновлення прошивки годинника та багато чого
+                    іншого.
+                </p>
+            </div>
+        </div>
+        <img alt="" class="img_right "
+            src="https://i.citrus.world/uploads/content/product-photos/deyneko/august2023/smart-chasy_726974_6.jpg" />
+    </div>
+    <!--!!! Блок сносок!!!  -->
+    <div class="footnote">
+        <p><sup><span>1</span></sup><span>Точність та чутливість функцій варіюються залежно від людини, її віку, постави
+                та майстерності під час тренування. Коротка тривалість тренування або часта зміна пози може не
+                активувати функцію автовизначення. Коли ви ведете машину або їдете в автобусі, або берете участь в інших
+                подібних діях, може спрацювати випадкове розпізнавання, якщо ці дії схожі на обраний режим тренування.
+                Коли ви проводите захід на свіжому повітрі, якщо сигнал GPS слабкий або інформація про дані AGPS не
+                синхронізується з мобільним телефоном протягом тривалого часу, такі заходи можуть бути оцінені як
+                заняття в кабінеті.</span>
+        </p>
+        <p><sup><span>2</span></sup><span>Термін служби батареї може змінюватись в залежності від налаштувань, умов
+                експлуатації та інших факторів. Тому реальний результат може відрізнятись від лабораторних даних.
+                Типовий сценарій використання: носіння годинника весь день; моніторинг серцевого ритму включений та
+                вимірюється з 10-хвилинними інтервалами, включений моніторинг сну; обраний статичний циферблат, 15
+                хвилин телефонних дзвінків через Bluetooth на тиждень; 150 push-повідомлень на день; 3 повідомлення про
+                дзвінки на день; підйом зап&#39;ястя, щоб побачити час до 100 разів на день; тест крові на вміст кисню 5
+                разів на день; яскраві екранні операції по 5 хвилин на день; 3 тренування на тиждень, кожна тривалістю
+                30 хвилин, з увімкненим GPS на годиннику. Режим заощадження батареї: доступні обмежені функції; функції
+                моніторингу здоров&#39;я, такі як частота серцевих скорочень, моніторинг рівня кисню в крові та стресу
+                відключені, включений лише базовий моніторинг сну; з&#39;єднання Bluetooth обмежено BLE.</span>
+        </p>
+        <p><sup><span>3</span></sup><span>Згідно зі стандартом IEC 60529, Amazfit Bip 5 має рейтинг IP68, що забезпечує
+                водонепроникність до 1,5 метрів і тому здатен витримувати бризки або попадання снігу. Годинник пройшов
+                незалежне тестування, проведене SGS, номер звіту - SHES230400733371. Знімайте годинник, коли приймаєте
+                гарячий душ, плаваєте, входите в сауну, тому що занадто багато пари може пошкодити ущільнення і зробити
+                його менш водонепроникним в майбутньому. Для отримання додаткової інформації відвідайте сторінку
+                підтримки за адресою: support.amazfit.com</span>
+        </p>
+    </div>
+</div>
