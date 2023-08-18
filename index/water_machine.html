@@ -1,15 +1,20 @@
-<style type="text/css">body {
-  padding: 0;
-  margin: 0;
+<!-- !!!! СТИЛІ - Обов'язково вставити зверху !!!! -->
+<style>
+  body {
+    padding: 0;
+    margin: 0;
   }
+
   .product__description.base-padding {
     padding: 0;
     /* border-radius: 0px; */
   }
+
   .universal_rich img {
     margin: 0;
     border-radius: 10px;
   }
+
   .universal_rich p {
     padding: 0;
     margin: 0;
@@ -19,10 +24,11 @@
     font-family: "Roboto", sans-serif;
     color: var(--color-gray-text);
   }
+
   .universal_rich h3 {
     background: linear-gradient(90deg,
-      rgba(255, 134, 55, 1) 0%,
-      rgba(255, 104, 10, 1) 100%);
+        rgba(255, 134, 55, 1) 0%,
+        rgba(255, 104, 10, 1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 700;
@@ -32,19 +38,23 @@
     font-size: 18px;
     font-family: "Roboto", sans-serif;
   }
+
   .universal_rich h3:nth-child(2) {
     margin-top: 20px;
   }
+
   .universal_rich h2 {
     margin-top: 20px;
     margin-bottom: 16px;
     font-size: 24px;
     text-align: center;
   }
+
   .universal_rich ul {
     list-style: disc;
     margin: 0;
   }
+
   .universal_rich ul li {
     line-height: normal;
     line-height: 130%;
@@ -53,77 +63,92 @@
     font-family: "Roboto", sans-serif;
     color: var(--color-gray-text);
   }
-  .universal_rich {
-    overflow: hidden;
-    padding-bottom: 40px;
-    max-width: 1366px;
-    margin: 0 auto;
-  }
-  body {
-    padding: 0;
-    margin: 0;
-  }
+
+
   .universal_rich ul {
     padding: 0;
     padding-left: 25px;
   }
+
   .universal_rich ul li {
     padding: 0;
     padding-left: 10px;
   }
+
   .universal_rich div {
     padding: 0;
   }
+
   div.universal_rich {
     padding: 0;
   }
+
   .universal_rich br {
     display: block;
   }
+
   .product__body .el-tabs__header {
     z-index: 6;
   }
+
   .universal_rich {
     max-width: 1366px;
     margin: 0 auto;
     text-align: center;
     overflow-x: hidden;
+    padding-bottom: 40px;
   }
+
   .universal_rich img {
     width: 100%;
   }
+
   .universal_rich .left_universal {
     padding: 20px 16px 0;
   }
+
   .universal_rich .right_universal {
     padding: 20px 16px 0;
   }
+
   .universal_rich .left_universal_text {
     padding-bottom: 20px;
   }
+
   .universal_rich .right_universal_text {
     padding: 0 14px 20px;
   }
+
   .universal_rich .indent p {
     margin-top: 10px;
   }
+
   .universal_rich .footnote {
     padding: 20px 16px;
     text-align: left;
   }
+
   .universal_rich .footnote p {
     font-size: 12px;
     color: #959595;
   }
+
   .universal_rich .block_first_center {
     text-align: center;
     display: grid;
     gap: 24px;
     padding-top: 20px;
   }
+
   .universal_rich .block_first_center_text {
     padding: 0 16px;
   }
+
+  .universal_rich .block_first_center_text_left {
+    padding: 0 16px;
+    text-align: left;
+  }
+
   .universal_rich .universal_hp_block_left {
     display: grid;
     text-align: left;
@@ -134,28 +159,35 @@
       "d";
     gap: 16px;
   }
+
   .universal_rich .universal_hp_block_left .right_universal_text {
     grid-area: b;
     padding: 0;
   }
+
   .universal_rich .universal_hp_block_left .block_first_center_text {
     grid-area: d;
     padding: 0;
   }
+
   .universal_rich .universal_hp_block_left .img_left {
     grid-area: a;
   }
+
   .universal_rich .universal_hp_block_right .right_universal_text {
     grid-area: b;
     padding: 0;
   }
+
   .universal_rich .universal_hp_block_right .block_first_center_text {
     grid-area: d;
     padding: 0;
   }
+
   .universal_rich .universal_hp_block_right .img_left {
     grid-area: a;
   }
+
   .universal_rich .universal_hp_block_right {
     display: grid;
     text-align: left;
@@ -166,18 +198,58 @@
       "d";
     gap: 16px;
   }
+
   .universal_rich .universal_hp_block_left .right_universal_text {
     grid-area: b;
     padding: 0;
   }
+
   .universal_rich .universal_hp_block_left .block_first_center_text {
     grid-area: d;
     padding: 0;
   }
+
   .universal_rich .universal_hp_block_left .img_left {
     grid-area: a;
   }
+
+  /* universal_side_by_side_block */
+
+  .universal_rich .universal_side_by_side_block {
+    padding: 30px 16px 0;
+    display: grid;
+    gap: 16px;
+  }
+
+  .universal_rich .universal_side_by_side_block .side_by_side {
+    display: grid;
+    gap: 16px;
+  }
+
+
+
+  .universal_rich .universal_side_by_side_block .side_by_side_text {
+    display: grid;
+    gap: 10px;
+  }
+
+  .universal_rich .universal_side_by_side_block .side_by_side_text .tehnic_text {
+    color: #959595;
+  }
+
+  .universal_rich .universal_side_by_side_block .side_by_side_text .footnote_text_side {
+    color: #959595;
+    font-size: 12px;
+  }
+
+  .universal_rich .universal_side_by_side_block h3 {
+    margin-bottom: 0;
+  }
+
+
+
   @media screen and (min-width: 666px) {
+
     .universal_rich .left_universal,
     .right_universal {
       display: grid;
@@ -186,34 +258,48 @@
       align-items: center;
       text-align: left;
     }
+
     .universal_rich .right_universal_text {
       grid-column-start: 2;
       grid-row-start: 1;
     }
+
     .universal_rich .left_universal {
       padding: 0 20px 40px;
     }
+
     .universal_rich .right_universal {
       padding: 0 20px 40px;
     }
+
     .universal_rich .left_universal_text {
       padding: 0;
     }
+
     .universal_rich .right_universal_text {
       padding: 0;
     }
+
     .universal_rich .first {
       padding-top: 40px;
     }
+
     .universal_rich .footnote {
       padding: 20px 20px;
     }
+
     .universal_rich .block_first_center {
       padding-top: 30px;
     }
+
     .universal_rich .block_first_center_text {
       padding: 0 20px;
     }
+
+    .universal_rich .block_first_center_text_left {
+      padding: 0 20px;
+    }
+
     .universal_rich .universal_hp_block_left {
       display: grid;
       text-align: left;
@@ -224,6 +310,7 @@
         "d d";
       gap: 20px;
     }
+
     .universal_rich .universal_hp_block_right {
       display: grid;
       text-align: left;
@@ -234,96 +321,168 @@
         "d d";
       gap: 16px;
     }
+
+    /* universal_side_by_side_block */
+
+    .universal_rich .universal_side_by_side_block {
+      padding: 40px 32px 0;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      text-align: left;
+      align-items: flex-start;
+    }
+
   }
+
   @media screen and (min-width: 1024px) {
+
     .universal_rich p,
     .universal_rich ul li {
       line-height: 150%;
       font-size: 18px;
     }
+
     .universal_rich h3 {
       line-height: 130%;
       margin-bottom: 20px;
       font-size: 24px;
     }
+
     .universal_rich h2 {
       margin-top: 30px;
       margin-bottom: 20px;
       font-size: 30px;
     }
+
     .universal_rich .left_universal,
     .right_universal {
       gap: 40px;
     }
+
     .universal_rich .left_universal {
       padding: 0 35px 60px;
     }
+
     .universal_rich .right_universal {
       padding: 0 20px 60px;
     }
+
     .universal_rich .first {
       padding-top: 40px;
     }
+
     .universal_rich .footnote {
       padding: 40px 40px 20px;
     }
+
     .universal_rich .block_first_center {
       padding-top: 40px;
     }
+
     .universal_rich .block_first_center_text {
       padding: 0 35px;
     }
+
+    .universal_rich .block_first_center_text_left {
+      padding: 0 40px;
+    }
+
     .universal_rich .universal_hp_block_left {
       padding: 40px 40px 0;
       gap: 25px;
     }
+
     .universal_rich .universal_hp_block_right {
       padding: 40px 40px 0;
       gap: 25px;
     }
+
+    .universal_rich .universal_side_by_side_block {
+      padding: 40px 40px 0;
+      gap: 20px;
+    }
+
+    .universal_rich .universal_side_by_side_block .side_by_side_text .tehnic_text {
+      font-size: 16px;
+    }
+
+    .universal_rich .universal_side_by_side_block .side_by_side_text .footnote_text_side {
+      font-size: 14px;
+    }
+
+    .universal_rich .universal_side_by_side_block .side_by_side {
+      gap: 20px;
+    }
   }
+
   @media screen and (min-width: 1366px) {
+
     .universal_rich .left_universal,
     .right_universal {
       gap: 60px;
     }
+
     .universal_rich .left_universal {
       padding: 0 80px 80px;
     }
+
     .universal_rich .right_universal {
       padding: 0 80px 80px;
     }
+
     .universal_rich h3 {
       margin-bottom: 20px;
       font-size: 28px;
     }
+
     .universal_rich .indent p {
       margin-top: 15px;
     }
+
     .universal_rich .first {
       padding-top: 40px;
     }
+
     .universal_rich h2 {
       margin-top: 40px;
       margin-bottom: 25px;
       font-size: 32px;
     }
+
     .universal_rich .footnote {
       padding: 40px 80px 20px;
     }
+
+
     .universal_rich .block_first_center {
       padding-top: 40px;
     }
+
     .universal_rich .block_first_center_text {
       padding: 0 100px;
     }
+
+    .universal_rich .block_first_center_text_left {
+      padding: 0 80px;
+    }
+
     .universal_rich .universal_hp_block_left {
       padding: 60px 80px 0;
       gap: 25px;
     }
+
     .universal_rich .universal_hp_block_right {
       padding: 60px 80px 0;
       gap: 25px;
+    }
+
+    .universal_rich .universal_side_by_side_block {
+      padding: 40px 80px 0;
+      gap: 24px;
+    }
+
+    .universal_rich .universal_side_by_side_block .side_by_side_text {
+      gap: 14px;
     }
   }
 </style>
@@ -332,10 +491,16 @@
     <div class="left_universal_text">
       <h3 class="technical_title">Пральна машина Vestel WBI812T2&nbsp;
       </h3>
-      <p class="technical_description">Пральна машина Vestel &ndash; стильний та надійний помічник у догляді за речами для всієї родини. Вона вміщує до 8 кг білизни та пропонує користувачеві 15 програм прання, які дозволять підібрати найбільш оптимальний варіант для різних типів тканин. А сучасні технології, що використовуються в ній, допомагають боротися навіть із найскладнішими плямами за одне прання і забезпечують антиалергенний ефект. Крім цього, машина може похвалитися дисплеєм та класом енергоефективності А+++, що робить її використання не лише комфортним, а й економічним. Це практичний вибір для тих, хто цінує свої гроші та час.
+      <p class="technical_description">Пральна машина Vestel &ndash; стильний та надійний помічник у догляді за речами
+        для всієї родини. Вона вміщує до 8 кг білизни та пропонує користувачеві 15 програм прання, які дозволять
+        підібрати найбільш оптимальний варіант для різних типів тканин. А сучасні технології, що використовуються в ній,
+        допомагають боротися навіть із найскладнішими плямами за одне прання і забезпечують антиалергенний ефект. Крім
+        цього, машина може похвалитися дисплеєм та класом енергоефективності А+++, що робить її використання не лише
+        комфортним, а й економічним. Це практичний вибір для тих, хто цінує свої гроші та час.
       </p>
     </div>
-    <img alt="Стиральная машина Vestel" class="img_right" src="https://i.citrus.world/uploads/content/product-photos/Gulko/08%2C2023/stiralnye-mashiny_726888_1.jpg?_t=1692099114" />
+    <img alt="Стиральная машина Vestel" class="img_right"
+      src="https://i.citrus.world/uploads/content/product-photos/Gulko/08%2C2023/stiralnye-mashiny_726888_1.jpg?_t=1692099114" />
   </div>
   <div class="right_universal first"><!-- first Додає відступ між блоками -->
     <div class="right_universal_text">
@@ -350,12 +515,16 @@
         <li>Відкладений запуск</li>
       </ul>
     </div>
-    <img alt="Стиральная машина Vestel" class="img_left" src="https://i.citrus.world/uploads/content/product-photos/Gulko/08%2C2023/stiralnye-mashiny_726888_2.jpg?_t=1692099838" />
+    <img alt="Стиральная машина Vestel" class="img_left"
+      src="https://i.citrus.world/uploads/content/product-photos/Gulko/08%2C2023/stiralnye-mashiny_726888_2.jpg?_t=1692099838" />
   </div>
   <div class="block_first_center_text">
     <h3 class="technical_title">Зручна та містка
     </h3>
-    <p class="technical_description">Автоматична машина Vestel зробить прання для вас ще комфортнішим. Завдяки великому барабану ця пральна машина може вмістити до 8 кг речей, що дозволяє легко прати одяг для всієї родини та об&#39;ємні речі. При цьому навіть великі речі ви можете легко завантажувати та витягувати за рахунок широких дверей та великого отвору для завантаження.
+    <p class="technical_description">Автоматична машина Vestel зробить прання для вас ще комфортнішим. Завдяки великому
+      барабану ця пральна машина може вмістити до 8 кг речей, що дозволяє легко прати одяг для всієї родини та
+      об&#39;ємні речі. При цьому навіть великі речі ви можете легко завантажувати та витягувати за рахунок широких
+      дверей та великого отвору для завантаження.
     </p>
   </div>
   <div class="left_universal first"><!-- first Додає відступ між блоками -->
@@ -363,30 +532,41 @@
       <div class="universal_text_dable">
         <h3 class="technical_title">Швидке прання за 15 хвилин
         </h3>
-        <p class="technical_description">Якщо у вас небагато речей або зовсім немає часу чекати, скористайтеся спеціальною програмою швидкого прання. Всього за 15 хвилин машинка зможе оперативно випрати одяг, поки ви снідаєте або закінчуєте інші свої справи.
+        <p class="technical_description">Якщо у вас небагато речей або зовсім немає часу чекати, скористайтеся
+          спеціальною програмою швидкого прання. Всього за 15 хвилин машинка зможе оперативно випрати одяг, поки ви
+          снідаєте або закінчуєте інші свої справи.
         </p>
       </div>
       <!--  -->
       <div class="universal_text_dable">
         <h3 class="technical_title">Щоденна програма прання за 60 хвилин
         </h3>
-        <p class="technical_description">Цей режим дозволяє регулярно прати білизну при температурі 60 &deg;C лише за 60 хвилин. Таким чином, ви отримуєте відмінні результати в найкоротші терміни та без зайвого клопоту.
+        <p class="technical_description">Цей режим дозволяє регулярно прати білизну при температурі 60 &deg;C лише за 60
+          хвилин. Таким чином, ви отримуєте відмінні результати в найкоротші терміни та без зайвого клопоту.
         </p>
       </div>
       <!--  -->
       <div class="universal_text_dable">
         <h3 class="technical_title">Антиалергенний режим
         </h3>
-        <p class="technical_description">Забезпечте повну гігієну білизни для своєї сім&#39;ї та насолоджуйтесь винятковими результатами після кожного прання зі спеціальною програмою &laquo;Антиалергія&raquo;. Вона суттєво скорочує кількість поширених алергенів, таких як квітковий пилок, шерсть тварин, грибок та пліснява та ефективно знищує бактерії під час прання. Ця функція була відзначена нагородою &laquo;Знак схвалення&raquo; авторитетним фондом Allergy UK, створеним для підтримки та допомоги пацієнтів з алергією в Англії.
+        <p class="technical_description">Забезпечте повну гігієну білизни для своєї сім&#39;ї та насолоджуйтесь
+          винятковими результатами після кожного прання зі спеціальною програмою &laquo;Антиалергія&raquo;. Вона суттєво
+          скорочує кількість поширених алергенів, таких як квітковий пилок, шерсть тварин, грибок та пліснява та
+          ефективно знищує бактерії під час прання. Ця функція була відзначена нагородою &laquo;Знак схвалення&raquo;
+          авторитетним фондом Allergy UK, створеним для підтримки та допомоги пацієнтів з алергією в Англії.
         </p>
       </div>
     </div>
-    <img alt="Стиральная машина Vestel" class="img_right" src="https://i.citrus.world/uploads/content/product-photos/Gulko/08%2C2023/stiralnye-mashiny_726888_3.jpg?_t=1692099838" />
+    <img alt="Стиральная машина Vestel" class="img_right"
+      src="https://i.citrus.world/uploads/content/product-photos/Gulko/08%2C2023/stiralnye-mashiny_726888_3.jpg?_t=1692099838" />
   </div>
   <div class="block_first_center_text">
     <h3 class="technical_title">Функція відстрочення старту
     </h3>
-    <p class="technical_description">Запрограмуйте пральну машину Vestel за своїми потребами. Завдяки функції відкладеного старту ви можете налаштувати початок циклу прання на будь-який потрібний вам час і отримати свіжовипрану білизну до потрібної години. Таким чином, не ви підлаштовуватиметеся під пральну машину, а вона під вас.
+    <p class="technical_description">Запрограмуйте пральну машину Vestel за своїми потребами. Завдяки функції
+      відкладеного старту ви можете налаштувати початок циклу прання на будь-який потрібний вам час і отримати
+      свіжовипрану білизну до потрібної години. Таким чином, не ви підлаштовуватиметеся під пральну машину, а вона під
+      вас.
     </p>
   </div>
 </div>

@@ -1,3 +1,4 @@
+<!-- !!!! СТИЛІ - Обов'язково вставити зверху !!!! -->
 <style>
     body {
         padding: 0;
@@ -63,17 +64,6 @@
         color: var(--color-gray-text);
     }
 
-    .universal_rich {
-        overflow: hidden;
-        padding-bottom: 40px;
-        max-width: 1366px;
-        margin: 0 auto;
-    }
-
-    body {
-        padding: 0;
-        margin: 0;
-    }
 
     .universal_rich ul {
         padding: 0;
@@ -106,6 +96,7 @@
         margin: 0 auto;
         text-align: center;
         overflow-x: hidden;
+        padding-bottom: 40px;
     }
 
     .universal_rich img {
@@ -153,6 +144,10 @@
         padding: 0 16px;
     }
 
+    .universal_rich .block_first_center_text_left {
+        padding: 0 16px;
+        text-align: left;
+    }
 
     .universal_rich .universal_hp_block_left {
         display: grid;
@@ -218,9 +213,38 @@
         grid-area: a;
     }
 
+    /* universal_side_by_side_block */
+
+    .universal_rich .universal_side_by_side_block {
+        padding: 30px 16px 0;
+        display: grid;
+        gap: 16px;
+    }
+
+    .universal_rich .universal_side_by_side_block .side_by_side {
+        display: grid;
+        gap: 16px;
+    }
 
 
 
+    .universal_rich .universal_side_by_side_block .side_by_side_text {
+        display: grid;
+        gap: 10px;
+    }
+
+    .universal_rich .universal_side_by_side_block .side_by_side_text .tehnic_text {
+        color: #959595;
+    }
+
+    .universal_rich .universal_side_by_side_block .side_by_side_text .footnote_text_side {
+        color: #959595;
+        font-size: 12px;
+    }
+
+    .universal_rich .universal_side_by_side_block h3 {
+        margin-bottom: 0;
+    }
 
 
 
@@ -272,6 +296,10 @@
             padding: 0 20px;
         }
 
+        .universal_rich .block_first_center_text_left {
+            padding: 0 20px;
+        }
+
         .universal_rich .universal_hp_block_left {
             display: grid;
             text-align: left;
@@ -293,6 +321,17 @@
                 "d d";
             gap: 16px;
         }
+
+        /* universal_side_by_side_block */
+
+        .universal_rich .universal_side_by_side_block {
+            padding: 40px 32px 0;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            text-align: left;
+            align-items: flex-start;
+        }
+
     }
 
     @media screen and (min-width: 1024px) {
@@ -344,6 +383,10 @@
             padding: 0 35px;
         }
 
+        .universal_rich .block_first_center_text_left {
+            padding: 0 40px;
+        }
+
         .universal_rich .universal_hp_block_left {
             padding: 40px 40px 0;
             gap: 25px;
@@ -352,6 +395,23 @@
         .universal_rich .universal_hp_block_right {
             padding: 40px 40px 0;
             gap: 25px;
+        }
+
+        .universal_rich .universal_side_by_side_block {
+            padding: 40px 40px 0;
+            gap: 20px;
+        }
+
+        .universal_rich .universal_side_by_side_block .side_by_side_text .tehnic_text {
+            font-size: 16px;
+        }
+
+        .universal_rich .universal_side_by_side_block .side_by_side_text .footnote_text_side {
+            font-size: 14px;
+        }
+
+        .universal_rich .universal_side_by_side_block .side_by_side {
+            gap: 20px;
         }
     }
 
@@ -402,6 +462,10 @@
             padding: 0 100px;
         }
 
+        .universal_rich .block_first_center_text_left {
+            padding: 0 80px;
+        }
+
         .universal_rich .universal_hp_block_left {
             padding: 60px 80px 0;
             gap: 25px;
@@ -410,6 +474,15 @@
         .universal_rich .universal_hp_block_right {
             padding: 60px 80px 0;
             gap: 25px;
+        }
+
+        .universal_rich .universal_side_by_side_block {
+            padding: 40px 80px 0;
+            gap: 24px;
+        }
+
+        .universal_rich .universal_side_by_side_block .side_by_side_text {
+            gap: 14px;
         }
     }
 </style>
