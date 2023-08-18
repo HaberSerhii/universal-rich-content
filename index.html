@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
     crossorigin="anonymous" />
-    <link rel="stylesheet" href="Bootstrap_v5.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <link rel="stylesheet" href="style.css" />
 
 </head>
@@ -17,291 +17,212 @@
 <body>
   <div class="container">
     <h1 class="page-title">Види та візуалізація опису категорій</h1>
- 
-    <div class="carousel__wrapper">
-      <div id="carouselExample" class="carousel slide">
-        <div class="carousel-inner">
+    <!-- карусель -->
+    <div class="container">
+      <h2 class="titel-product">
+        Our
+        <span class="yellow-titel-product">PRODUCTS</span>
+      </h2>
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <ul class="swiper-wrapper ">
+          <!-- Slides -->
 
-          <div class="carousel-item active">
-            <div class="row">
-              <div class="col-md-4 rounded">
-                <div class="carousel__card rounded">
-                  <div class="carousel__card-picture">
-                    <span class="image-title">Image</span>
-                  </div>
-                  <div class="carousel__card-title">
-                    <span class="card-title-rich">Стандартний робочий блок КАРТИНКА c ПРАВА</span>
-                  </div>
-                  <div class="carousel__card-code d-flex justify-content-center align-items-center">
-                    <div class="carousel__link-code-css"><span>Link to CSS</span></div>
-                    <div class="carousel__link-code-html">
-                      <span>Link to HTML</span>
-                    </div>
-                  </div>
+          <li class="swiper-slide item">
+            <article class="card">
+              <a href="./index/water_machine.html" class="link">
+                <div class="card-thumb smartphone">
+                  <img
+                    src="https://i.citrus.world/uploads/content/product-photos/topchiy/July-2022/july-2022-2/WW62J42E0JW-UA_005_Dynamic-Door-Open_01.jpg"
+                    alt="" class="fixed-image">
                 </div>
-              </div>
-              <div class="col-md-4 rounded">
-                <div class="carousel__card rounded">
-                  <div class="carousel__card-picture">
-                    <span class="image-title">Image</span>
-                  </div>
-                  <div class="carousel__card-title">
-                    <span class="card-title-rich">Тільки текстовий блок</span>
-                  </div>
-                  <div class="carousel__card-code d-flex justify-content-center align-items-center">
-                    <div class="carousel__link-code-css"><span>Link to CSS</span></div>
-                    <div class="carousel__link-code-html">
-                      <span>Link to HTML</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 rounded">
-                <div class="carousel__card rounded">
-                  <div class="carousel__card-picture">
-                    <span class="image-title">Image</span>
-                  </div>
-                  <div class="carousel__card-title">
-                    <span class="card-title-rich">Тільки текстовий блок равнение на лево</span>
-                  </div>
-                  <div class="carousel__card-code d-flex justify-content-center align-items-center">
-                    <div class="carousel__link-code-css"><span>Link to CSS</span></div>
-                    <div class="carousel__link-code-html">
-                      <span>Link to HTML</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
 
-          <div class="carousel-item">
-            <div class="row">
-              <div class="col-md-4 rounded">
-                <div class="carousel__card rounded">
-                  <div class="carousel__card-picture">
-                    <span class="image-title">Image</span>
-                  </div>
-                  <div class="carousel__card-title">
-                    <span class="card-title-rich">Стандартний робочий блок КАРТИНКА ЗЛІВА</span>
-                  </div>
-                  <div class="carousel__card-code d-flex justify-content-center align-items-center">
-                    <div class="carousel__link-code-css"><span>Link to CSS</span></div>
-                    <div class="carousel__link-code-html">
-                      <span>Link to HTML</span>
-                    </div>
-                  </div>
+                <div class="card-content">
+                  <h2 class="card-heading">Пральні машини</h2>
+                  <p class="card-text">
+                    Цей приклад використання блоків в категорії Пральні машини.
+                  </p>
                 </div>
+              </a>
+              <div class="text-link">
+                <a href="https://raw.githubusercontent.com/HaberSerhii/universal-rich-content/main/index/water_machine.html"
+                  class="link"><span class="span">Скопіювати HTML-код зі стилями</span></a>
               </div>
-              <div class="col-md-4 rounded">
-                <div class="carousel__card rounded">
-                  <div class="carousel__card-picture">
-                    <span class="image-title">Image</span>
-                  </div>
-                  <div class="carousel__card-title">
-                    <span class="card-title-rich">Блок заголовний по центру</span>
-                  </div>
-                  <div class="carousel__card-code d-flex justify-content-center align-items-center">
-                    <div class="carousel__link-code-css"><span>Link to CSS</span></div>
-                    <div class="carousel__link-code-html">
-                      <span>Link to HTML</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 rounded">
-                <div class="carousel__card rounded">
-                  <div class="carousel__card-picture">
-                    <span class="image-title">Image</span>
-                  </div>
-                  <div class="carousel__card-title">
-                    <span class="card-title-rich">Блок для подвійного абзацу з двома заголовками КАРТИНКА З ЛІВА</span>
-                  </div>
-                  <div class="carousel__card-code d-flex justify-content-center align-items-center">
-                    <div class="carousel__link-code-css"><span>Link to CSS</span></div>
-                    <div class="carousel__link-code-html">
-                      <span>Link to HTML</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <div class="row">
-              <div class="col-md-4 rounded">
-                <div class="carousel__card rounded">
-                  <div class="carousel__card-picture">
-                    <span class="image-title">Image</span>
-                  </div>
-                  <div class="carousel__card-title">
-                    <span class="card-title-rich">Блок для подвійного абзацу з двома заголовками КАРТИНКА З ПРАВА</span>
-                  </div>
-                  <div class="carousel__card-code d-flex justify-content-center align-items-center">
-                    <div class="carousel__link-code-css"><span>Link to CSS</span></div>
-                    <div class="carousel__link-code-html">
-                      <span>Link to HTML</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 rounded">
-                <div class="carousel__card rounded">
-                  <div class="carousel__card-picture">
-                    <span class="image-title">Image</span>
-                  </div>
-                  <div class="carousel__card-title">
-                    <span class="card-title-rich">Блок для потрійного абзацу з двома заголовками КАРТИНКА З ЛІВА</span>
-                  </div>
-                  <div class="carousel__card-code d-flex justify-content-center align-items-center">
-                    <div class="carousel__link-code-css"><span>Link to CSS</span></div>
-                    <div class="carousel__link-code-html">
-                      <span>Link to HTML</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 rounded">
-                <div class="carousel__card rounded">
-                  <div class="carousel__card-picture">
-                    <span class="image-title">Image</span>
-                  </div>
-                  <div class="carousel__card-title">
-                    <span class="card-title-rich">Блок для потрійного абзацу з двома заголовками КАРТИНКА З ПРАВА</span>
-                  </div>
-                  <div class="carousel__card-code d-flex justify-content-center align-items-center">
-                    <div class="carousel__link-code-css"><span>Link to CSS</span></div>
-                    <div class="carousel__link-code-html">
-                      <span>Link to HTML</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <div class="row">
-              <div class="col-md-4 rounded">
-                <div class="carousel__card rounded">
-                  <div class="carousel__card-picture">
-                    <span class="image-title">Image</span>
-                  </div>
-                  <div class="carousel__card-title">
-                    <span class="card-title-rich">Блок із двома обзацами без заголовка КАРТИНКА ЗЛІВА</span>
-                  </div>
-                  <div class="carousel__card-code d-flex justify-content-center align-items-center">
-                    <div class="carousel__link-code-css"><span>Link to CSS</span></div>
-                    <div class="carousel__link-code-html">
-                      <span>Link to HTML</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 rounded">
-                <div class="carousel__card rounded">
-                  <div class="carousel__card-picture">
-                    <span class="image-title">Image</span>
-                  </div>
-                  <div class="carousel__card-title">
-                    <span class="card-title-rich">Блок із двома абзацами без заголовка КАРТИНКА З ПРАВА</span>
-                  </div>
-                  <div class="carousel__card-code d-flex justify-content-center align-items-center">
-                    <div class="carousel__link-code-css"><span>Link to CSS</span></div>
-                    <div class="carousel__link-code-html">
-                      <span>Link to HTML</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 rounded">
-                <div class="carousel__card rounded">
-                  <div class="carousel__card-picture">
-                    <span class="image-title">Image</span>
-                  </div>
-                  <div class="carousel__card-title">
-                    <span class="card-title-rich">Блок із характеристиками списком КАРТИНКА ЗЛІВА</span>
-                  </div>
-                  <div class="carousel__card-code d-flex justify-content-center align-items-center">
-                    <div class="carousel__link-code-css"><span>Link to CSS</span></div>
-                    <div class="carousel__link-code-html">
-                      <span>Link to HTML</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <div class="row">
-              <div class="col-md-4 rounded">
-                <div class="carousel__card rounded">
-                  <div class="carousel__card-picture">
-                    <span class="image-title">Image</span>
-                  </div>
-                  <div class="carousel__card-title">
-                    <span class="card-title-rich">Блок із характеристиками списком КАРТИНКА ЗПРАВА</span>
-                  </div>
-                  <div class="carousel__card-code d-flex justify-content-center align-items-center">
-                    <div class="carousel__link-code-css"><span>Link to CSS</span></div>
-                    <div class="carousel__link-code-html">
-                      <span>Link to HTML</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 rounded">
-                <div class="carousel__card rounded">
-                  <div class="carousel__card-picture">
-                    <span class="image-title">Image</span>
-                  </div>
-                  <div class="carousel__card-title">
-                    <span class="card-title-rich">Блок із двома абзацами без заголовка КАРТИНКА З ПРАВА</span>
-                  </div>
-                  <div class="carousel__card-code d-flex justify-content-center align-items-center">
-                    <div class="carousel__link-code-css"><span>Link to CSS</span></div>
-                    <div class="carousel__link-code-html">
-                      <span>Link to HTML</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 rounded">
-                <div class="carousel__card rounded">
-                  <div class="carousel__card-picture">
-                    <span class="image-title">Image</span>
-                  </div>
-                  <div class="carousel__card-title">
-                    <span class="card-title-rich">Блок із характеристиками списком КАРТИНКА ЗЛІВА</span>
-                  </div>
-                  <div class="carousel__card-code d-flex justify-content-center align-items-center">
-                    <div class="carousel__link-code-css"><span>Link to CSS</span></div>
-                    <div class="carousel__link-code-html">
-                      <span>Link to HTML</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+            </article>
+            </a>
+          </li>
 
 
-          <!-- Add more carousel items as needed -->
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+          <li class="swiper-slide item">
+            <article class="card">
+              <a href="./index/water_machine.html" class="link">
+                <div class="card-thumb smartphone">
+                  <img
+                    src="https://i.citrus.world/uploads/content/product-photos/topchiy/July-2022/july-2022-2/WW62J42E0JW-UA_005_Dynamic-Door-Open_01.jpg"
+                    alt="" class="fixed-image">
+                </div>
+
+                <div class="card-content">
+                  <h2 class="card-heading">Пральні машини</h2>
+                  <p class="card-text">
+                    Цей приклад використання блоків в категорії Пральні машини.
+                  </p>
+                </div>
+              </a>
+              <div class="text-link">
+                <a href="https://raw.githubusercontent.com/HaberSerhii/universal-rich-content/main/index/water_machine.html"
+                  class="link"><span class="span">Скопіювати HTML-код зі стилями</span></a>
+              </div>
+            </article>
+            </a>
+          </li>
+          <li class="swiper-slide item">
+            <article class="card">
+              <a href="./index/water_machine.html" class="link">
+                <div class="card-thumb smartphone">
+                  <img
+                    src="https://i.citrus.world/uploads/content/product-photos/topchiy/July-2022/july-2022-2/WW62J42E0JW-UA_005_Dynamic-Door-Open_01.jpg"
+                    alt="" class="fixed-image">
+                </div>
+
+                <div class="card-content">
+                  <h2 class="card-heading">Пральні машини</h2>
+                  <p class="card-text">
+                    Цей приклад використання блоків в категорії Пральні машини.
+                  </p>
+                </div>
+              </a>
+              <div class="text-link">
+                <a href="https://raw.githubusercontent.com/HaberSerhii/universal-rich-content/main/index/water_machine.html"
+                  class="link"><span class="span">Скопіювати HTML-код зі стилями</span></a>
+              </div>
+            </article>
+            </a>
+          </li>
+          <li class="swiper-slide item">
+            <article class="card">
+              <a href="./index/water_machine.html" class="link">
+                <div class="card-thumb smartphone">
+                  <img
+                    src="https://i.citrus.world/uploads/content/product-photos/topchiy/July-2022/july-2022-2/WW62J42E0JW-UA_005_Dynamic-Door-Open_01.jpg"
+                    alt="" class="fixed-image">
+                </div>
+
+                <div class="card-content">
+                  <h2 class="card-heading">Пральні машини</h2>
+                  <p class="card-text">
+                    Цей приклад використання блоків в категорії Пральні машини.
+                  </p>
+                </div>
+              </a>
+              <div class="text-link">
+                <a href="https://raw.githubusercontent.com/HaberSerhii/universal-rich-content/main/index/water_machine.html"
+                  class="link"><span class="span">Скопіювати HTML-код зі стилями</span></a>
+              </div>
+            </article>
+            </a>
+          </li>
+          <li class="swiper-slide item">
+            <article class="card">
+              <a href="./index/water_machine.html" class="link">
+                <div class="card-thumb smartphone">
+                  <img
+                    src="https://i.citrus.world/uploads/content/product-photos/topchiy/July-2022/july-2022-2/WW62J42E0JW-UA_005_Dynamic-Door-Open_01.jpg"
+                    alt="" class="fixed-image">
+                </div>
+
+                <div class="card-content">
+                  <h2 class="card-heading">Пральні машини</h2>
+                  <p class="card-text">
+                    Цей приклад використання блоків в категорії Пральні машини.
+                  </p>
+                </div>
+              </a>
+              <div class="text-link">
+                <a href="https://raw.githubusercontent.com/HaberSerhii/universal-rich-content/main/index/water_machine.html"
+                  class="link"><span class="span">Скопіювати HTML-код зі стилями</span></a>
+              </div>
+            </article>
+            </a>
+          </li>
+          <li class="swiper-slide item">
+            <article class="card">
+              <a href="./index/water_machine.html" class="link">
+                <div class="card-thumb smartphone">
+                  <img
+                    src="https://i.citrus.world/uploads/content/product-photos/topchiy/July-2022/july-2022-2/WW62J42E0JW-UA_005_Dynamic-Door-Open_01.jpg"
+                    alt="" class="fixed-image">
+                </div>
+
+                <div class="card-content">
+                  <h2 class="card-heading">Пральні машини</h2>
+                  <p class="card-text">
+                    Цей приклад використання блоків в категорії Пральні машини.
+                  </p>
+                </div>
+              </a>
+              <div class="text-link">
+                <a href="https://raw.githubusercontent.com/HaberSerhii/universal-rich-content/main/index/water_machine.html"
+                  class="link"><span class="span">Скопіювати HTML-код зі стилями</span></a>
+              </div>
+            </article>
+            </a>
+          </li>
+          <li class="swiper-slide item">
+            <article class="card">
+              <a href="./index/water_machine.html" class="link">
+                <div class="card-thumb smartphone">
+                  <img
+                    src="https://i.citrus.world/uploads/content/product-photos/topchiy/July-2022/july-2022-2/WW62J42E0JW-UA_005_Dynamic-Door-Open_01.jpg"
+                    alt="" class="fixed-image">
+                </div>
+
+                <div class="card-content">
+                  <h2 class="card-heading">Пральні машини</h2>
+                  <p class="card-text">
+                    Цей приклад використання блоків в категорії Пральні машини.
+                  </p>
+                </div>
+              </a>
+              <div class="text-link">
+                <a href="https://raw.githubusercontent.com/HaberSerhii/universal-rich-content/main/index/water_machine.html"
+                  class="link"><span class="span">Скопіювати HTML-код зі стилями</span></a>
+              </div>
+            </article>
+            </a>
+          </li>
+          <li class="swiper-slide item">
+            <article class="card">
+              <a href="./index/water_machine.html" class="link">
+                <div class="card-thumb smartphone">
+                  <img
+                    src="https://i.citrus.world/uploads/content/product-photos/topchiy/July-2022/july-2022-2/WW62J42E0JW-UA_005_Dynamic-Door-Open_01.jpg"
+                    alt="" class="fixed-image">
+                </div>
+
+                <div class="card-content">
+                  <h2 class="card-heading">Пральні машини</h2>
+                  <p class="card-text">
+                    Цей приклад використання блоків в категорії Пральні машини.
+                  </p>
+                </div>
+              </a>
+              <div class="text-link">
+                <a href="https://raw.githubusercontent.com/HaberSerhii/universal-rich-content/main/index/water_machine.html"
+                  class="link"><span class="span">Скопіювати HTML-код зі стилями</span></a>
+              </div>
+            </article>
+            </a>
+          </li>
+
+        </ul>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination swiper-pagination-active"></div>
       </div>
-      
     </div>
-   
+
+    <!-- поиск -->
     <div class="search-container">
       <input type="text" id="searchInput" placeholder="Пошук за категорією">
     </div>
@@ -317,7 +238,8 @@
             <div class="card-content">
               <h2 class="card-heading">Блок для ознайомлення</h2>
               <p class="card-text">
-                Цей приклад з усіма блоками, котрі використовуваются в усіх категоріях. Детальний опис по кожному блоку.
+                Цей приклад з усіма блоками, котрі використовуваются в усіх категоріях. Детальний опис по кожному
+                блоку.
               </p>
             </div>
           </a>
@@ -326,7 +248,6 @@
               class="link"><span class="span">Скопіювати HTML-код зі стилями</span></a>
           </div>
         </article>
-        </a>
       </li>
 
       <li class="item">
@@ -626,9 +547,10 @@
 
     </ul>
   </div>
-  <script src="Bootstrap_v5.3/js/bootstrap.min.js"></script>
-  <script src="Bootstrap_v5.3/js/bootstrap.bundle.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="script/script.js"></script>
 
 </body>
+
 </html>
