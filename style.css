@@ -1,27 +1,21 @@
 :root {
-    --page-bg-color: #f9f9fd;
-    --primary-text-color: black;
-    --card-set-gap: 20px;
-    --card-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
-        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  --page-bg-color: #f9f9fd;
+  --primary-text-color: black;
+  --card-set-gap: 20px;
+  --card-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 
 body {
-    background-image: linear-gradient(
-        -45deg,
-        #4571d8,
-        #21586f,
-        #666b7a,
-        #2b5ea5
-    );
-    color: var(--primary-text-color);
-    height: 100%;
-    line-height: 1.5;
+  background-image: linear-gradient(-45deg, #4571d8, #21586f, #666b7a, #2b5ea5);
+  color: var(--primary-text-color);
+  height: 100%;
+  line-height: 1.5;
 }
 
 a {
-    color: inherit;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
 h1,
@@ -31,189 +25,178 @@ h4,
 h5,
 h6,
 p {
-    margin: 0;
+  margin: 0;
 }
 
 img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /* PAGE */
 .page-title {
-    font-size: 32px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    text-align: center;
-    color: #ff8637;
+  font-size: 32px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #ff8637;
 }
 
 /* CONTAINER */
 .container {
-    width: 1170px;
-    padding-left: 15px;
-    padding-right: 15px;
+  width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
 
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Styles for input */
 
 .search-container {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
 }
 
 .search-container > input {
-    padding: 16px 0 16px 24px;
-    width: 40%;
-    border-radius: 10px;
-    border: 1px solid transparent;
-    outline: none;
+  padding: 16px 0 16px 24px;
+  width: 40%;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  outline: none;
 }
 
 /* CARD SET */
 .card-set {
-    padding: 0;
-    margin: 0;
-    list-style: none;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: calc(-1 * var(--card-set-gap));
-    margin-top: calc(-1 * var(--card-set-gap));
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--card-set-gap));
+  margin-top: calc(-1 * var(--card-set-gap));
 }
 
 .card-set > .item {
-    flex-basis: calc(100% / 3 - var(--card-set-gap));
-    margin-left: var(--card-set-gap);
-    margin-top: var(--card-set-gap);
+  flex-basis: calc(100% / 3 - var(--card-set-gap));
+  margin-left: var(--card-set-gap);
+  margin-top: var(--card-set-gap);
 }
 
 /* CARD */
 .card {
-    box-shadow: var(--card-shadow);
-    border: 2px solid black;
-    border-radius: 10px;
-    overflow: hidden;
+  box-shadow: var(--card-shadow);
+  border: 2px solid black;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .card-content {
-    width: 100%;
-    height: 150px;
-    padding: 15px;
-    background-color: white;
+  width: 100%;
+  height: 150px;
+  padding: 15px;
+  background-color: white;
 }
 .card-content:hover {
-    background-image: linear-gradient(
-        -45deg,
-        #4571d8,
-        #21586f,
-        #666b7a,
-        #2b5ea5
-    );
-    color: aliceblue;
+  background-image: linear-gradient(-45deg, #4571d8, #21586f, #666b7a, #2b5ea5);
+  color: aliceblue;
 }
 
 .card-text {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 .card-heading {
-    color: #ff8637;
-    text-align: center;
+  color: #ff8637;
+  text-align: center;
 }
 .card-thumb {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .span {
-    color: #ff8637;
-    font-weight: bold;
+  color: #ff8637;
+  font-weight: bold;
 }
 .text-link {
-    text-align: center;
-    padding: 15px;
-    background-color: white;
+  text-align: center;
+  min-width: 145px;
+  padding: 15px;
+  background-color: transparent;
 }
 .text-link:hover {
-    background-image: linear-gradient(
-        -45deg,
-        #4571d8,
-        #21586f,
-        #666b7a,
-        #2b5ea5
-    );
-    color: aliceblue;
+  background-image: linear-gradient(-45deg, #4571d8, #21586f, #666b7a, #2b5ea5);
+  color: aliceblue;
 }
 
 .fixed-image {
-    width: 100%;
-    height: 200px;
+  width: 100%;
+  height: 200px;
 }
 
 /* Styles for carousel */
 
 .carousel__wrapper {
-    margin: 0 auto 40px !important;
+  margin: 0 auto 40px !important;
 }
 .carousel__card {
-    border-radius: 10px !important;
-    height: 200px;
-    max-width: 360px;
-    background-color: whitesmoke;
+  border-radius: 10px !important;
+  height: 200px;
+  max-width: 360px;
+  background-color: whitesmoke;
 }
 
 .carousel-control-prev {
-    left: -140px;
+  left: -140px;
 }
 .carousel-control-next {
-    right: -140px;
+  right: -140px;
 }
 .carousel__card-picture {
-    border-radius: 10px 10px 0 0;
-    text-align: center;
-    background-color: rgb(106, 36, 106);
-    height: 150px;
+  border-radius: 10px 10px 0 0;
+  text-align: center;
+  background-color: rgb(106, 36, 106);
+  height: 150px;
 }
 .carousel__card-picture > img {
-    height: 150px;
+  height: 150px;
 }
 .image-title,
 .card-title-rich,
 .carousel__link-code-css,
 .carousel__link-code-html {
-    color: whitesmoke;
-    font-size: 18px;
+  color: whitesmoke;
+  font-size: 18px;
 }
 
 .image-title {
-    margin-top: 20px;
-    text-align: center;
+  margin-top: 20px;
+  text-align: center;
 }
 
 .carousel__card-title {
-    text-align: center;
-    background-color: orange;
-    height: 50px;
-    width: 100%;
+  text-align: center;
+  background-color: orange;
+  height: 50px;
+  width: 100%;
 }
 
 .carousel__link-code-css {
-    border-radius: 0 0 0 10px;
-    text-align: center;
-    width: 50%;
-    height: 50px;
-    background-color: rgb(20, 53, 104);
+  border-radius: 0 0 0 10px;
+  text-align: center;
+  width: 50%;
+  height: 50px;
+  background-color: rgb(20, 53, 104);
 }
 .carousel__link-code-html {
-    border-radius: 0 0 10px 0;
-    text-align: center;
-    width: 50%;
-    height: 50px;
-    background-color: darkorchid;
+  border-radius: 0 0 10px 0;
+  text-align: center;
+  width: 50%;
+  height: 50px;
+  background-color: darkorchid;
 }
