@@ -2,6 +2,25 @@
 <img src="https://www.ctrs.com.ua/images/logo.svg" alt='logo' />
 <h3 align="center" style="padding: 20px 0; font-size: 30px; font-weight: 700; letter-spacing: 0.1em; color: #ff8637;">Описи для карток товарів. Updates.</h3>
    <p></p>
+   <h3 align="left" style="padding: 20px 0; font-size: 20px; font-weight: 700; letter-spacing: 0.1em; color: #ff8637;">update 21.08.23</h3>
+  <ul>
+    <li>
+      додана категорія "Тепловентилятор"
+    </li>
+    <li>
+      додана категорія "Підсилювач WI-FI сигналу"
+    </li>
+    <li>
+      додана категорія "Зубна щітка"
+    </li>
+    <li>
+      додана категорія "Стайлер"
+    </li>
+    <li>
+      додана категорія "Випрямляч для волосся"
+    </li>
+  </ul>
+  <p></p>
   <h3 align="left" style="padding: 20px 0; font-size: 20px; font-weight: 700; letter-spacing: 0.1em; color: #ff8637;">update 18.08.23</h3>
   <ul>
     <li>
