@@ -2,6 +2,22 @@
 <img src="https://www.ctrs.com.ua/images/logo.svg" alt='logo' />
 <h3 align="center" style="padding: 20px 0; font-size: 30px; font-weight: 700; letter-spacing: 0.1em; color: #ff8637;">Описи для карток товарів. Updates.</h3>
    <p></p>
+    <h3 align="left" style="padding: 20px 0; font-size: 20px; font-weight: 700; letter-spacing: 0.1em; color: #ff8637;">update 31.08.23</h3>
+  <ul>
+  <li>
+      додано категорію "Чемодани"
+    </li>
+    <li>
+      додано категорію "Шуруповерт"
+    </li>
+    <li>
+      додано категорію "Проєктор"
+    </li>
+    <li>
+      оновлено CSS v1.5 (31.08.23)
+    </li>
+  </ul>
+  <p></p>
      <h3 align="left" style="padding: 20px 0; font-size: 20px; font-weight: 700; letter-spacing: 0.1em; color: #ff8637;">update 24.08.23</h3>
   <ul>
     <li>
