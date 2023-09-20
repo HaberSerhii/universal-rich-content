@@ -1,0 +1,554 @@
+<!-- !!!! СТИЛІ - Обов'язково вставити зверху v1.5 (31.08.23)!!!! -->
+<style type="text/css">
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    .product__description.base-padding {
+        padding: 0;
+        /* border-radius: 0px; */
+    }
+
+    .universal_rich img {
+        margin: 0;
+        border-radius: 10px;
+    }
+
+    .universal_rich p {
+        padding: 0;
+        margin: 0;
+        line-height: 130%;
+        font-weight: 400;
+        font-size: 14px;
+        font-family: "Roboto", sans-serif;
+        color: var(--color-gray-text);
+    }
+
+    .universal_rich h3 {
+        background: linear-gradient(90deg,
+                rgba(255, 134, 55, 1) 0%,
+                rgba(255, 104, 10, 1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 700;
+        margin-top: 0;
+        line-height: 130%;
+        margin-bottom: 10px;
+        font-size: 18px;
+        font-family: "Roboto", sans-serif;
+    }
+
+    .universal_rich h3:nth-child(2) {
+        margin-top: 20px;
+    }
+
+    .universal_rich h2 {
+        margin-top: 20px;
+        margin-bottom: 16px;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .universal_rich ul {
+        list-style: disc;
+        margin: 0;
+    }
+
+    .universal_rich ul li {
+        line-height: normal;
+        line-height: 130%;
+        font-weight: 400;
+        font-size: 14px;
+        font-family: "Roboto", sans-serif;
+        color: var(--color-gray-text);
+    }
+
+    .universal_rich ul {
+        padding: 0;
+        padding-left: 16px;
+    }
+
+    .universal_rich ul li {
+        padding: 0;
+    }
+
+    .universal_rich div {
+        padding: 0;
+    }
+
+    div.universal_rich {
+        padding: 0;
+    }
+
+    .universal_rich br {
+        display: block;
+    }
+
+    .product__body .el-tabs__header {
+        z-index: 6;
+    }
+
+    .universal_rich {
+        max-width: 1366px;
+        margin: 0 auto;
+        overflow-x: hidden;
+        padding-bottom: 40px;
+    }
+
+    .universal_rich img {
+        width: 100%;
+    }
+
+    .universal_rich .left_universal {
+        padding: 20px 16px 0;
+    }
+
+    .universal_rich .right_universal {
+        padding: 20px 16px 0;
+    }
+
+    .universal_rich .left_universal_text {
+        padding-bottom: 20px;
+    }
+
+    .universal_rich .right_universal_text {
+        padding: 0 14px 20px;
+    }
+
+    .universal_rich .indent p {
+        margin-top: 10px;
+    }
+
+    .universal_rich .footnote {
+        padding: 20px 16px;
+        text-align: left;
+    }
+
+    .universal_rich .footnote p {
+        font-size: 12px;
+        color: #959595;
+    }
+
+    .universal_rich .block_first_center {
+        text-align: center;
+        display: grid;
+        gap: 24px;
+        padding-top: 20px;
+    }
+
+    .universal_rich .block_first_center_text {
+        padding: 0 16px;
+    }
+
+    .universal_rich .block_first_center_text_left {
+        padding: 0 16px 16px;
+        text-align: left;
+    }
+
+    .universal_rich .universal_hp_block_left {
+        display: grid;
+        text-align: left;
+        padding: 40px 16px 0;
+        grid-template-areas:
+            "b"
+            "a"
+            "d";
+        gap: 16px;
+    }
+
+    .universal_rich .universal_hp_block_left .right_universal_text {
+        grid-area: b;
+        padding: 0;
+    }
+
+    .universal_rich .universal_hp_block_left .block_first_center_text {
+        grid-area: d;
+        padding: 0;
+    }
+
+    .universal_rich .universal_hp_block_left .img_left {
+        grid-area: a;
+    }
+
+    .universal_rich .universal_hp_block_right .right_universal_text {
+        grid-area: b;
+        padding: 0;
+    }
+
+    .universal_rich .universal_hp_block_right .block_first_center_text {
+        grid-area: d;
+        padding: 0;
+    }
+
+    .universal_rich .universal_hp_block_right .img_left {
+        grid-area: a;
+    }
+
+    .universal_rich .universal_hp_block_right {
+        display: grid;
+        text-align: left;
+        padding: 40px 16px 0;
+        grid-template-areas:
+            "b"
+            "a"
+            "d";
+        gap: 16px;
+    }
+
+    .universal_rich .universal_hp_block_left .right_universal_text {
+        grid-area: b;
+        padding: 0;
+    }
+
+    .universal_rich .universal_hp_block_left .block_first_center_text {
+        grid-area: d;
+        padding: 0;
+    }
+
+    .universal_rich .universal_hp_block_left .img_left {
+        grid-area: a;
+    }
+
+    /* universal_side_by_side_block */
+    .universal_rich .universal_side_by_side_block {
+        padding: 30px 16px 0;
+        display: grid;
+        gap: 16px;
+    }
+
+    .universal_rich .universal_side_by_side_block .side_by_side {
+        display: grid;
+        gap: 16px;
+    }
+
+    .universal_rich .universal_side_by_side_block .side_by_side_text {
+        display: grid;
+        gap: 10px;
+    }
+
+    .universal_rich .universal_side_by_side_block .side_by_side_text .tehnic_text {
+        color: #959595;
+    }
+
+    .universal_rich .universal_side_by_side_block .side_by_side_text .footnote_text_side {
+        color: #959595;
+        font-size: 12px;
+    }
+
+    .universal_rich .universal_side_by_side_block h3 {
+        margin-bottom: 0;
+    }
+
+    @media screen and (min-width: 666px) {
+
+        .universal_rich .left_universal,
+        .right_universal {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+            align-items: center;
+            text-align: left;
+        }
+
+        .universal_rich .right_universal_text {
+            grid-column-start: 2;
+            grid-row-start: 1;
+        }
+
+        .universal_rich .left_universal {
+            padding: 0 20px 20px;
+        }
+
+        .universal_rich .right_universal {
+            padding: 0 20px 20px;
+        }
+
+        .universal_rich .left_universal_text {
+            padding: 0;
+        }
+
+        .universal_rich .right_universal_text {
+            padding: 0;
+        }
+
+        .universal_rich .first {
+            padding-top: 40px;
+        }
+
+        .universal_rich .footnote {
+            padding: 20px 20px;
+        }
+
+        .universal_rich .block_first_center {
+            padding-top: 30px;
+        }
+
+        .universal_rich .block_first_center_text {
+            padding: 0 20px;
+        }
+
+        .universal_rich .block_first_center_text_left {
+            padding: 0 20px 20px;
+        }
+
+        .universal_rich .universal_hp_block_left {
+            display: grid;
+            text-align: left;
+            padding: 40px 20px 0;
+            align-items: center;
+            grid-template-areas:
+                "a b"
+                "d d";
+            gap: 20px;
+        }
+
+        .universal_rich .universal_hp_block_right {
+            display: grid;
+            text-align: left;
+            padding: 40px 20px 0;
+            align-items: center;
+            grid-template-areas:
+                "b a"
+                "d d";
+            gap: 16px;
+        }
+
+        /* universal_side_by_side_block */
+        .universal_rich .universal_side_by_side_block {
+            padding: 40px 32px 0;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            text-align: left;
+            align-items: flex-start;
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+
+        .universal_rich p,
+        .universal_rich ul li {
+            line-height: 150%;
+            font-size: 18px;
+        }
+
+        .universal_rich h3 {
+            line-height: 130%;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .universal_rich h2 {
+            margin-top: 30px;
+            margin-bottom: 20px;
+            font-size: 30px;
+        }
+
+        .universal_rich .left_universal,
+        .right_universal {
+            gap: 40px;
+        }
+
+        .universal_rich .left_universal {
+            padding: 0 35px 30px;
+        }
+
+        .universal_rich .right_universal {
+            padding: 0 20px 30px;
+        }
+
+        .universal_rich .first {
+            padding-top: 40px;
+        }
+
+        .universal_rich .footnote {
+            padding: 40px 40px 20px;
+        }
+
+        .universal_rich .block_first_center {
+            padding-top: 40px;
+        }
+
+        .universal_rich .block_first_center_text {
+            padding: 0 35px;
+        }
+
+        .universal_rich .block_first_center_text_left {
+            padding: 0 40px 20px;
+        }
+
+        .universal_rich .universal_hp_block_left {
+            padding: 40px 40px 0;
+            gap: 25px;
+        }
+
+        .universal_rich .universal_hp_block_right {
+            padding: 40px 40px 0;
+            gap: 25px;
+        }
+
+        .universal_rich .universal_side_by_side_block {
+            padding: 40px 40px 0;
+            gap: 20px;
+        }
+
+        .universal_rich .universal_side_by_side_block .side_by_side_text .tehnic_text {
+            font-size: 16px;
+        }
+
+        .universal_rich .universal_side_by_side_block .side_by_side_text .footnote_text_side {
+            font-size: 14px;
+        }
+
+        .universal_rich .universal_side_by_side_block .side_by_side {
+            gap: 20px;
+        }
+    }
+
+    @media screen and (min-width: 1366px) {
+
+        .universal_rich .left_universal,
+        .right_universal {
+            gap: 60px;
+        }
+
+        .universal_rich .left_universal {
+            padding: 0 80px 40px;
+        }
+
+        .universal_rich .right_universal {
+            padding: 0 80px 40px;
+        }
+
+        .universal_rich h3 {
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+
+        .universal_rich .indent p {
+            margin-top: 15px;
+        }
+
+        .universal_rich .first {
+            padding-top: 40px;
+        }
+
+        .universal_rich h2 {
+            margin-top: 40px;
+            margin-bottom: 25px;
+            font-size: 32px;
+        }
+
+        .universal_rich .footnote {
+            padding: 40px 80px 20px;
+        }
+
+        .universal_rich .block_first_center {
+            padding-top: 40px;
+        }
+
+        .universal_rich .block_first_center_text {
+            padding: 0 100px;
+        }
+
+        .universal_rich .block_first_center_text_left {
+            padding: 0 80px 30px;
+        }
+
+        .universal_rich .universal_hp_block_left {
+            padding: 60px 80px 0;
+            gap: 25px;
+        }
+
+        .universal_rich .universal_hp_block_right {
+            padding: 60px 80px 0;
+            gap: 25px;
+        }
+
+        .universal_rich .universal_side_by_side_block {
+            padding: 40px 80px 0;
+            gap: 24px;
+        }
+
+        .universal_rich .universal_side_by_side_block .side_by_side_text {
+            gap: 14px;
+        }
+    }
+</style>
+
+<div class="universal_rich">
+    <div class="block_first_center">
+        <div class="block_first_center_text">
+            <h3 class="technical_title">Праска Tefal PUREGLISS Coppertinto &amp; Black FV8064E0
+            </h3>
+            <p>Парова праска Tefal PUREGLISS Coppertinto &amp; Black FV8064E0 забезпечує винятковий догляд за одягом
+                завдяки поєднанню потужної подачі пари та розширених функцій.
+            </p>
+        </div>
+    </div>
+    <div class="right_universal first"><!-- Додає відступ між блоками -->
+        <div class="right_universal_text" style="display: grid; gap: 20px">
+            <div class="universal_text_dable">
+                <h3 class="technical_title"><strong>Ідеальні результати щоразу</strong>
+                </h3>
+                <p class="technical_description">Дивовижна потужність для ідеального прасування: потужність 3000 Вт для
+                    швидкого нагріву, постійна подача пари 50 г/хв та паровий удар 280 г/хв для легкого розгладження
+                    складок.
+                </p>
+            </div>
+            <div class="universal_text_dable">
+                <h3 class="technical_title"><strong>Без ризику появи плям</strong>
+                </h3>
+                <p class="technical_description">Запатентована технологія Micro Calc Filter забезпечує тривалу роботу,
+                    зберігаючи весь ваш одяг та постільну білизну бездоганними та захищеними від плям.
+                </p>
+            </div>
+        </div>
+        <img alt="" class="img_left"
+            src="https://i.citrus.world/uploads/content/product-photos/Gulko/09.2023/utyugi_729483_1.jpg?_t=1695053889" />
+    </div>
+    <div class="left_universal first"><!-- first Додає відступ між блоками -->
+        <div class="left_universal_text" style="display: grid; gap: 20px">
+            <div class="universal_text_dable">
+                <h3 class="technical_title"><strong>Відмінне ковзання</strong>
+                </h3>
+                <p class="technical_description">Швидке та легке прасування з технологією Durilium Airglide Autoclean:
+                    оптимальна дифузія пари, виняткове ковзання та каталітичне покриття Autoclean для бездоганної роботи
+                    без плям протягом тривалого часу.
+                </p>
+            </div>
+            <div class="universal_text_dable">
+                <h3 class="technical_title"><strong>Автоматичне вимкнення</strong>
+                </h3>
+                <p class="technical_description">Режим очікування автоматично активується, коли праска залишається без
+                    нагляду &mdash; через 8 хвилин, якщо її залишити на п&#39;яті, і через 30 секунд, якщо залишити на
+                    підошві або на боці.
+                </p>
+            </div>
+        </div>
+        <img alt="" class="img_right"
+            src="https://i.citrus.world/uploads/content/product-photos/Gulko/09.2023/utyugi_729483_2.jpg?_t=1695053890" />
+    </div>
+    <div class="right_universal first"><!-- Додає відступ між блоками -->
+        <div class="right_universal_text" style="display: grid; gap: 20px">
+            <div class="universal_text_dable">
+                <h3 class="technical_title"><strong>Легке вертикальне відпарювання</strong>
+                </h3>
+                <p class="technical_description">Відпарювання делікатних і великих речей спрощується завдяки функції
+                    вертикального відпарювання, яка ідеально підходить для останньої обробки та розгладжування складок
+                    на костюмах та інших предметах одягу, що висять - навіть на шторах.
+                </p>
+            </div>
+            <div class="universal_text_dable">
+                <h3 class="technical_title"><strong>Дезінфекційна сила пари</strong>
+                </h3>
+                <p class="technical_description">Поєднання високої температури та тиску пари вбиває до 99,99% бактерій
+                    на всіх тканинах, які можна прасувати, забезпечуючи виняткову гігієнічність та здоровіший догляд за
+                    одягом.
+                </p>
+            </div>
+        </div>
+        <img alt="" class="img_left"
+            src="https://i.citrus.world/uploads/content/product-photos/Gulko/09.2023/utyugi_729483_3.jpg?_t=1695053889" />
+    </div>
+</div>
