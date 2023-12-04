@@ -2,6 +2,12 @@
 <img src="https://www.ctrs.com.ua/images/logo.svg" alt='logo' />
 <h3 align="center" style="padding: 20px 0; font-size: 30px; font-weight: 700; letter-spacing: 0.1em; color: #ff8637;">Описи для карток товарів. Updates.</h3>
     <p></p>
+    <h3 align="left" style="padding: 20px 0; font-size: 20px; font-weight: 700; letter-spacing: 0.1em; color: #ff8637;">update 04.11.23</h3>
+  <ul>
+      <li>
+      оновив стилі для коректного відображення особливостей 
+    </li>
+      </ul>
     <h3 align="left" style="padding: 20px 0; font-size: 20px; font-weight: 700; letter-spacing: 0.1em; color: #ff8637;">update 20.09.23</h3>
   <ul>
       <li>
